@@ -1,0 +1,127 @@
+[
+  {
+    "category": "pálinkák",
+    "items": [
+      {
+        "itemName": "Lunczer Ágyas Körte",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Barrique",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Cigánymeggy",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Meggy-Málna",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Prémium Kajszi",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Prémium Szilva",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Szõlõ-Birs",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Vilmoskörte",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      }
+    ]
+  }
+]

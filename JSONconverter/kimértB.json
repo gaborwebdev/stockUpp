@@ -1,0 +1,52 @@
+[
+  {
+    "category": "kimért_borok",
+    "items": [
+      {
+        "itemName": "Ház KF",
+        "itemGroup": "kimért_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 4.9,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 10,
+            "multiplier": 5
+          }
+        }
+      },
+      {
+        "itemName": "Ház OR",
+        "itemGroup": "kimért_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 4.9,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 10,
+            "multiplier": 5
+          }
+        }
+      },
+      {
+        "itemName": "Ház Rosé",
+        "itemGroup": "kimért_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 4.9,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 10,
+            "multiplier": 5
+          }
+        }
+      }
+    ]
+  }
+]

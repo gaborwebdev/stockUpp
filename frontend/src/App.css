@@ -1,38 +1,133 @@
-.App {
+
+.App{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: rgb(250, 246, 246);
+}
+
+.App .do-stock,
+.App .App-header {
+  width: 60%;
+
+/* 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.do-stock-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+
+/* stock rules */
+.row-in-stock {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.item-name-and-counted{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  /* border: 1px solid red; */
+
+}
+
+.add-buttons-group,
+.total-in-stock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-name,
+.counted-pieces {
+  align-self: flex-start;
+}
+
+.counted-pieces {
+  padding-left: .5rem;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.counted-pieces .title {
+  justify-self: flex-start;
+  font-size: 1rem;
+  color: #eeb3b3;
+}
+
+
+.left-side-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  /* border: 1px solid blue; */
+}
+
+.total-in-stock {
+  align-self: flex-end;
+  align-items: flex-end;
+  gap: 5px;
+}
+.total-title {
+  font-size: 1rem;
+  font-style: italic;
+  color: #a3d8f4;
+}
+.total-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.add-buttons-group button {
+  padding: 1rem 1rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bottle,
+.do-stock-button {
+
+  font-weight: bold;
+
+  background-color: #4daec9;
+  border: none;
+  border-radius: 5px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.case,
+.edit-items-button {
+  background-color: #21a1f1;
+  border: none;
+  border-radius: 5px;
+  color: white;
 }

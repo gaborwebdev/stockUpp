@@ -1,0 +1,43 @@
+Keresés és szűrés: egy inputtal tudsz szűrni az italok nevére vagy csoportra.
+
+Csoportosítás: pl. “ásványvizek”, “rövid italok” stb. – groupolva listázod.
+
+Színkód: ha valami itemOnStock = 0, akkor pirossal jelölöd.
+
+Exportálás CSV-be vagy PDF-be – később könnyen hozzáadható.
+
+==================================
+
+1️⃣ JSON betöltése és alap render
+
+Cél:
+Megjeleníteni a kategóriákat és az italokat a képernyőn.
+
+Teendők:
+
+Importáld a JSON-t a komponensbe (import stockData from "../../items.json").
+
+Map-eld végig a categories-t, majd a items-t, és jelenítsd meg:
+
+itemName
+
+itemOnStock (kezdetben 0)
+
+Ellenőrizd, hogy a DOM-ban minden item megjelenik.
+
+2️⃣ Popup gombok dinamikusan
+
+Cél:
+Minden itemhez gombokat létrehozni a measurementType szerint, popup generálása.
+
+Teendők:
+
+Map-eld a measurementType kulcsait (bottle, crate, pod, liter stb.).
+
+Gomb generálása minden kulcshoz, pl. „Üveg”, „Rekesz”, „Pod”.
+
+onClick esemény a gombokra → popup nyitása.
+
+Popupban generálj számgombokat 1-től maxCount-ig.
+
+Tip: A popup legyen egy külön komponens, ami kap:

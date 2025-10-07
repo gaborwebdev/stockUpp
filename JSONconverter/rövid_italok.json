@@ -1,0 +1,292 @@
+[
+  {
+    "category": "rövid_italok",
+    "items": [
+      {
+        "itemName": "Aperol",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Bacardi Carta Blanca",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Baileys",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Ballantines",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Bombay Sapphire",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Campari",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Finlandia",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Gordons Gin",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Jack Daniels",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Jägermeister",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Jameson",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Johnie W Red",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Martini Bianco",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Martini Extra Dry",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Martini Fiero",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Martini Rosso",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Metaxa",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Unicum",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Unicum Szilva",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "multiplier": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      }
+    ]
+  }
+]

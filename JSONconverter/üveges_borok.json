@@ -1,0 +1,260 @@
+[
+  {
+    "category": "üveges_borok",
+    "items": [
+      {
+        "itemName": "ANDA Furmint 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Gyöngyözõ 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Irsai Olivér 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Olaszrizling 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Rajnai Rizling 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Rosé 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Sárgamuskotály 0,5L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Sauvignon Blanc 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Visegrád Fehér Cuvée 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Visegrád Vörös Cuvée 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Dobosi Juhfark",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Dubicz Mátrai Muscat Ottonel",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Dúzsi Rosé",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Günzer Irsai 23",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Günzer Rosé 23",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Jekl Vadóc Portugieser",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Paulus Sauvignon Blanc",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Thummerer Tréfli",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Vylyan Bogyólé ",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Vylyan Cabernet Sauvignon",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Vylyan Herka CH ",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Vylyan Ördög",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Zelna Olaszrizling",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "multiplier": 1
+          }
+        }
+      }
+    ]
+  }
+]

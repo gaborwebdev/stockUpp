@@ -1,0 +1,709 @@
+[
+    {
+        "itemName": "Naturaqua Mentes 0,33",
+        "itemType": "Alapanyag",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 175.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Naturaqua Savas 0,33",
+        "itemType": "Alapanyag",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 158.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Römerquelle Mentes 0,75",
+        "itemType": "Alapanyag",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 44.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Römerquelle Savas 0,75",
+        "itemType": "Alapanyag",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 23.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Szóda liter",
+        "itemType": "Alapanyag",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 0.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "citromlé",
+        "itemType": "Alapanyag",
+        "itemGroup": "coctail alap",
+        "itemOnStock": 0.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Tej",
+        "itemType": "Alapanyag",
+        "itemGroup": "félkész_termékek",
+        "itemOnStock": 0.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Forró csoki por",
+        "itemType": "Alapanyag",
+        "itemGroup": "kávé",
+        "itemOnStock": 0.0,
+        "itemUnit": "kg"
+    },
+    {
+        "itemName": "Illy Kávé Pod",
+        "itemType": "Alapanyag",
+        "itemGroup": "kávé",
+        "itemOnStock": 150.0,
+        "itemUnit": "darab"
+    },
+    {
+        "itemName": "Illy Koffein Mentes Kávé Pod",
+        "itemType": "Alapanyag",
+        "itemGroup": "kávé",
+        "itemOnStock": 57.0,
+        "itemUnit": "darab"
+    },
+    {
+        "itemName": "Ház KF",
+        "itemType": "Alapanyag",
+        "itemGroup": "kimért_borok",
+        "itemOnStock": 11.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Ház OR",
+        "itemType": "Alapanyag",
+        "itemGroup": "kimért_borok",
+        "itemOnStock": 18.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Ház Rosé",
+        "itemType": "Alapanyag",
+        "itemGroup": "kimért_borok",
+        "itemOnStock": 9.5,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Lunczer Ágyas Körte",
+        "itemType": "Alapanyag",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0.5,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Lunczer Barrique",
+        "itemType": "Alapanyag",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0.26,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Lunczer Cigánymeggy",
+        "itemType": "Alapanyag",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0.66,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Lunczer Meggy-Málna",
+        "itemType": "Alapanyag",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0.32,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Lunczer Prémium Kajszi",
+        "itemType": "Alapanyag",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0.38,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Lunczer Prémium Szilva",
+        "itemType": "Alapanyag",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0.48,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Lunczer Szõlõ-Birs",
+        "itemType": "Alapanyag",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0.58,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Lunczer Vilmoskörte",
+        "itemType": "Alapanyag",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0.62,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Babarczi Habzóbor",
+        "itemType": "Alapanyag",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 1.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Dissegna Prosecco ",
+        "itemType": "Alapanyag",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 6.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Hungária ED 0,2",
+        "itemType": "Alapanyag",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 0.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Hungária ED 0,75",
+        "itemType": "Alapanyag",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 8.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Törley 0,2",
+        "itemType": "Alapanyag",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 3.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Törley 0,75",
+        "itemType": "Alapanyag",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 6.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Törley Alkoholmentes",
+        "itemType": "Alapanyag",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 9.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Aperol",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 2.85,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Bacardi Carta Blanca",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 1.44,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Baileys",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 1.28,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Ballantines",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0.23,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Bombay Sapphire",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0.24,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Campari",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0.72,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Finlandia",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0.79,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Gordons Gin",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0.12,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Jack Daniels",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 1.4,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Jägermeister",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 1.52,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Jameson",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 1.18,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Johnie W Red",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0.35,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Martini Bianco",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 1.3,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Martini Extra Dry",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0.3,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Martini Fiero",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0.12,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Martini Rosso",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 1.66,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Metaxa",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 1.34,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Unicum",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0.56,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Unicum Szilva",
+        "itemType": "Alapanyag",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 1.56,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Edelweiss 0,5",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 36.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Gösser 0% Citrone 0,33",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 24.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Gösser Special 0,33",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 20.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Heineken 0% 0,33",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 29.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Krusovice 0,5 üveg",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 0.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Krusovice Csapolt",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 55.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Mort Subite 20L",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 17.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Soproni 1895 Csapolt",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 0.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Soproni Démon 0,5",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 24.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Soproni Szûz 0,5",
+        "itemType": "Alapanyag",
+        "itemGroup": "sörök",
+        "itemOnStock": 17.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Bodza Szörp 1 liter",
+        "itemType": "Alapanyag",
+        "itemGroup": "szörpök",
+        "itemOnStock": 1.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Ribizli Szörp 1 liter",
+        "itemType": "Alapanyag",
+        "itemGroup": "szörpök",
+        "itemOnStock": 6.0,
+        "itemUnit": "liter"
+    },
+    {
+        "itemName": "Forró tea",
+        "itemType": "Alapanyag",
+        "itemGroup": "tea",
+        "itemOnStock": 8.0,
+        "itemUnit": "darab"
+    },
+    {
+        "itemName": "ANDA Furmint 0,75L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 5.0,
+        "itemUnit": "0,75 literes"
+    },
+    {
+        "itemName": "ANDA Gyöngyözõ 0,75L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0.0,
+        "itemUnit": "0,75 literes"
+    },
+    {
+        "itemName": "ANDA Irsai Olivér 0,75L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 2.0,
+        "itemUnit": "0,75 literes"
+    },
+    {
+        "itemName": "ANDA Olaszrizling 0,75L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0.0,
+        "itemUnit": "0,75 literes"
+    },
+    {
+        "itemName": "ANDA Rajnai Rizling 0,75L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 3.0,
+        "itemUnit": "0,75 literes"
+    },
+    {
+        "itemName": "ANDA Rosé 0,75L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0.0,
+        "itemUnit": "0,75 literes"
+    },
+    {
+        "itemName": "ANDA Sárgamuskotály 0,5L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 5.0,
+        "itemUnit": "0,5 literes"
+    },
+    {
+        "itemName": "ANDA Sauvignon Blanc 0,75L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 1.0,
+        "itemUnit": "0,75 literes"
+    },
+    {
+        "itemName": "ANDA Visegrád Fehér Cuvée 0,75L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 3.0,
+        "itemUnit": "0,75 literes"
+    },
+    {
+        "itemName": "ANDA Visegrád Vörös Cuvée 0,75L",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 4.0,
+        "itemUnit": "0,75 literes"
+    },
+    {
+        "itemName": "Dobosi Juhfark",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 5.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Dubicz Mátrai Muscat Ottonel",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 4.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Dúzsi Rosé",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 5.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Günzer Irsai 23",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 3.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Günzer Rosé 23",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 3.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Jekl Vadóc Portugieser",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 4.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Paulus Sauvignon Blanc",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 3.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Thummerer Tréfli",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 4.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Vylyan Bogyólé ",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 9.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Vylyan Cabernet Sauvignon",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 5.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Vylyan Herka CH ",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 5.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Vylyan Ördög",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 4.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Zelna Olaszrizling",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 4.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Cappy Alma 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 36.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Cappy Ananász 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 32.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Cappy Eper 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 19.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Cappy Körte 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 30.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Cappy Narancs 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 48.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Cappy Õszibarack 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 49.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Cherry Coke 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 48.0,
+        "itemUnit": "0,25 literes"
+    },
+    {
+        "itemName": "Coca Cola 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 101.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Coca Cola Zero 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 144.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Fanta 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 22.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Fuze Barackos Jeges 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 15.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Fuze Citromos Jeges 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 80.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Kinley Ginger Beer",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 2.0,
+        "itemUnit": "0,25 literes"
+    },
+    {
+        "itemName": "Kinley Gyömbér 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 64.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Kinley Tonic 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 61.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Red Bull 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 6.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "Sprite 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 28.0,
+        "itemUnit": "üveg"
+    },
+    {
+        "itemName": "TopJoy Paradicsomlé 0,25",
+        "itemType": "Alapanyag",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0.0,
+        "itemUnit": "üveg"
+    }
+]

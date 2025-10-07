@@ -1,0 +1,52 @@
+[
+  {
+    "category": "kávé",
+    "items": [
+      {
+        "itemName": "Forró csoki por",
+        "itemGroup": "kávé",
+        "itemOnStock": 0,
+        "measurementType": {
+          "pod": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "package": {
+            "maxCount": 9,
+            "multiplier": 50
+          }
+        }
+      },
+      {
+        "itemName": "Illy Kávé Pod",
+        "itemGroup": "kávé",
+        "itemOnStock": 0,
+        "measurementType": {
+          "pod": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "package": {
+            "maxCount": 9,
+            "multiplier": 50
+          }
+        }
+      },
+      {
+        "itemName": "Illy Koffein Mentes Kávé Pod",
+        "itemGroup": "kávé",
+        "itemOnStock": 0,
+        "measurementType": {
+          "pod": {
+            "maxCount": 49,
+            "multiplier": 1
+          },
+          "package": {
+            "maxCount": 9,
+            "multiplier": 50
+          }
+        }
+      }
+    ]
+  }
+]

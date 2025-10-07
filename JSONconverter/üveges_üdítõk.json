@@ -1,0 +1,277 @@
+[
+  {
+    "category": "üveges_üdítõk",
+    "items": [
+      {
+        "itemName": "Cappy Alma 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Ananász 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Eper 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Körte 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Narancs 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Õszibarack 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cherry Coke 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Coca Cola 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Coca Cola Zero 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Fanta 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Fuze Barackos Jeges 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Fuze Citromos Jeges 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Kinley Ginger Beer",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Kinley Gyömbér 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Kinley Tonic 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Red Bull 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Sprite 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "TopJoy Paradicsomlé 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      }
+    ]
+  }
+]

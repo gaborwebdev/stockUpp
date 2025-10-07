@@ -1,0 +1,157 @@
+[
+  {
+    "category": "sörök",
+    "items": [
+      {
+        "itemName": "Edelweiss 0,5",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      },
+      {
+        "itemName": "Gösser 0% Citrone 0,33",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Gösser Special 0,33",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Heineken 0% 0,33",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 23,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Krusovice 0,5 üveg",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      },
+      {
+        "itemName": "Krusovice Csapolt",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 29,
+            "multiplier": 1
+          },
+          "keg": {
+            "maxCount": 3,
+            "multiplier": 30
+          }
+        }
+      },
+      {
+        "itemName": "Mort Subite 20L",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      },
+      {
+        "itemName": "Soproni 1895 Csapolt",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 29,
+            "multiplier": 1
+          },
+          "keg": {
+            "maxCount": 3,
+            "multiplier": 30
+          }
+        }
+      },
+      {
+        "itemName": "Soproni Démon 0,5",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      },
+      {
+        "itemName": "Soproni Szûz 0,5",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "multiplier": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      }
+    ]
+  }
+]
