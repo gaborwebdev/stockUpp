@@ -65,7 +65,13 @@
             {
                 "itemName": "Szóda liter",
                 "itemGroup": "ásványvizek",
-                "itemOnStock": 0
+                "itemOnStock": 0,
+                "measurementType": {
+                    "hordó": {
+                        "maxCount": 19,
+                        "multiplier": 1
+                    }
+                }
             }
         ]
     },

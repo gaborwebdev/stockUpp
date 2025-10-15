@@ -1,40 +1,20 @@
-let example = {
-  "itemName": "Lunczer Ágyas Körte",
-  "itemGroup": "pálinkák",
-  "baseUnit": "liter",
-  "itemOnStock": 0,
-  "measurementType": {
-    "cl": {
-      "maxCount": 50,
-      "step": 1,
-      "unit": "centiliter",
-      "toBase": 0.01
-    },
-    "üveg": {
-      "maxCount": 4,
-      "unit": "liter",
-      "toBase": 0.5
-    }
-  }
-}
-
-import stockData from './stockData.json' with { type: 'json' };
+import stockData from './items.json' with { type: 'json' };
 
 import fs from 'fs';
 
 let stock = stockData;
 
 let newStockData = [
-/*     {
+    {
         category: "üveges_üdítõk",
         items:[
 
         ]
-    } */
+    }
 ];
 
-stock.map(item => {
-/*     if(item.itemGroup === "üveges_üdítõk") {
+stock.forEach(item => {
+    if(item.itemGroup === "üveges_üdítõk") {
         item.itemOnStock = 0;
         delete item.itemType;
         delete item.itemUnit;
@@ -51,24 +31,9 @@ stock.map(item => {
                     multiplier: 24
                 }
 
-        } */
-// console.log("ITEM: ", item.category);
+        }
 
-item.items.map(subItem => {
-    //console.log(subItem.itemGroup);
-
-    if ( subItem.itemGroup === "ásványvizek" ) {
-        console.log("Ásványvíz: ", subItem.itemName);
-    }
-    // delete subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier;
-
-    // subItem.measurementType[Object.keys(subItem.measurementType)[0]].step = 1
-
-/*     console.log(subItem.itemName, Object.keys(subItem.measurementType)[0], subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier,  subItem.measurementType[Object.keys(subItem.measurementType)[0]].step); */
-
-
-   //console.log("mt: ", subItem.measurementType);
-});
+ 
 /* 
          
          if ( item.itemName.includes("0,33") ) {
@@ -129,18 +94,18 @@ item.items.map(subItem => {
     ///
 
 
-    // newStockData[0].items.push(item);
+    newStockData[0].items.push(item);
 
 }
-);
+});
 
 
 
 let newData = newStockData;
 
-//fs.writeFileSync("updated.json", JSON.stringify(stock, null, 2), "utf-8");
-// console.log(stock[0].items.forEach((subItem) => { console.log(subItem.measurementType);}));
+fs.writeFileSync("üveges_üdítõk.json", JSON.stringify(newData, null, 2), "utf-8");
+console.log(newData);
 
-//console.log("✅ JSON kiírva!", newData);
+console.log("✅ JSON kiírva!");
 
 

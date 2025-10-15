@@ -1,0 +1,1363 @@
+[
+  {
+    "category": "ásványvizek",
+    "items": [
+      {
+        "itemName": "Naturaqua Mentes 0,33",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Naturaqua Savas 0,33",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Römerquelle Mentes 0,75",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 20,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 6,
+            "multiplier": 12
+          }
+        }
+      },
+      {
+        "itemName": "Römerquelle Savas 0,75",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 20,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 6,
+            "multiplier": 12
+          }
+        }
+      },
+      {
+        "itemName": "Szóda liter",
+        "itemGroup": "ásványvizek",
+        "itemOnStock": 0,
+        "measurementType": {
+          "hordó": {
+            "maxCount": 19,
+            "step": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "kávé",
+    "items": [
+      {
+        "itemName": "Forró csoki por",
+        "itemGroup": "kávé",
+        "itemOnStock": 0,
+        "measurementType": {
+          "_100g": {
+            "maxCount": 1000,
+            "step": 50
+          },
+          "package": {
+            "maxCount": 3,
+            "multiplier": 1000
+          }
+        }
+      },
+      {
+        "itemName": "Illy Kávé Pod",
+        "itemGroup": "kávé",
+        "itemOnStock": 0,
+        "measurementType": {
+          "pod": {
+            "maxCount": 49,
+            "step": 1
+          },
+          "package": {
+            "maxCount": 9,
+            "multiplier": 50
+          }
+        }
+      },
+      {
+        "itemName": "Illy Koffein Mentes Kávé Pod",
+        "itemGroup": "kávé",
+        "itemOnStock": 0,
+        "measurementType": {
+          "pod": {
+            "maxCount": 49,
+            "step": 1
+          },
+          "package": {
+            "maxCount": 9,
+            "multiplier": 50
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "kimért_borok",
+    "items": [
+      {
+        "itemName": "Ház KF",
+        "itemGroup": "kimért_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 5,
+            "step": 0.5
+          },
+          "crate": {
+            "maxCount": 10,
+            "multiplier": 5
+          }
+        }
+      },
+      {
+        "itemName": "Ház OR",
+        "itemGroup": "kimért_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 5,
+            "step": 0.5
+          },
+          "crate": {
+            "maxCount": 10,
+            "multiplier": 5
+          }
+        }
+      },
+      {
+        "itemName": "Ház Rosé",
+        "itemGroup": "kimért_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 5,
+            "step": 0.5
+          },
+          "crate": {
+            "maxCount": 10,
+            "multiplier": 5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "pálinkák",
+    "items": [
+      {
+        "itemName": "Lunczer Ágyas Körte",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 50,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Barrique",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Cigánymeggy",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Meggy-Málna",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Prémium Kajszi",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Prémium Szilva",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Szõlõ-Birs",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      },
+      {
+        "itemName": "Lunczer Vilmoskörte",
+        "itemGroup": "pálinkák",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 49,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 0.5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "pezsgõ",
+    "items": [
+      {
+        "itemName": "Babarczi Habzóbor",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 20,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Dissegna Prosecco ",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 20,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Hungária ED 0,2",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 24,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Hungária ED 0,75",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 20,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Törley 0,2",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 24,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Törley 0,75",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 20,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Törley Alkoholmentes",
+        "itemGroup": "pezsgõ",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 20,
+            "step": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "rövid_italok",
+    "items": [
+      {
+        "itemName": "Aperol",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Bacardi Carta Blanca",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Baileys",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Ballantines",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Bombay Sapphire",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Campari",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Finlandia",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Gordons Gin",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Jack Daniels",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Jägermeister",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Jameson",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Johnie W Red",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Martini Bianco",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Martini Extra Dry",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Martini Fiero",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Martini Rosso",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Metaxa",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Unicum",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      },
+      {
+        "itemName": "Unicum Szilva",
+        "itemGroup": "rövid_italok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "cl": {
+            "maxCount": 99,
+            "step": 1
+          },
+          "üveg": {
+            "maxCount": 4,
+            "multiplier": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "sörök",
+    "items": [
+      {
+        "itemName": "Edelweiss 0,5",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      },
+      {
+        "itemName": "Gösser 0% Citrone 0,33",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Gösser Special 0,33",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Heineken 0% 0,33",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Krusovice 0,5 üveg",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      },
+      {
+        "itemName": "Krusovice Csapolt",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 29,
+            "step": 1
+          },
+          "keg": {
+            "maxCount": 3,
+            "multiplier": 30
+          }
+        }
+      },
+      {
+        "itemName": "Mort Subite 20L",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      },
+      {
+        "itemName": "Soproni 1895 Csapolt",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "liter": {
+            "maxCount": 29,
+            "step": 1
+          },
+          "keg": {
+            "maxCount": 3,
+            "multiplier": 30
+          }
+        }
+      },
+      {
+        "itemName": "Soproni Démon 0,5",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      },
+      {
+        "itemName": "Soproni Szûz 0,5",
+        "itemGroup": "sörök",
+        "itemOnStock": 0,
+        "measurementType": {
+          "bottle": {
+            "maxCount": 19,
+            "step": 1
+          },
+          "crate": {
+            "maxCount": 3,
+            "multiplier": 20
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "üveges_borok",
+    "items": [
+      {
+        "itemName": "ANDA Furmint 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Gyöngyözõ 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Irsai Olivér 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Olaszrizling 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Rajnai Rizling 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Rosé 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Sárgamuskotály 0,5L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Sauvignon Blanc 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Visegrád Fehér Cuvée 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "ANDA Visegrád Vörös Cuvée 0,75L",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Dobosi Juhfark",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Dubicz Mátrai Muscat Ottonel",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Dúzsi Rosé",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Günzer Irsai 23",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Günzer Rosé 23",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Jekl Vadóc Portugieser",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Paulus Sauvignon Blanc",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Thummerer Tréfli",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Vylyan Bogyólé ",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Vylyan Cabernet Sauvignon",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Vylyan Herka CH ",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Vylyan Ördög",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      },
+      {
+        "itemName": "Zelna Olaszrizling",
+        "itemGroup": "üveges_borok",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 12,
+            "step": 1
+          }
+        }
+      }
+    ]
+  },
+  {
+    "category": "üveges_üdítõk",
+    "items": [
+      {
+        "itemName": "Cappy Alma 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Ananász 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Eper 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Körte 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Narancs 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cappy Õszibarack 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Cherry Coke 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Coca Cola 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Coca Cola Zero 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Fanta 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Fuze Barackos Jeges 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Fuze Citromos Jeges 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Kinley Ginger Beer",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Kinley Gyömbér 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Kinley Tonic 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Red Bull 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "Sprite 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      },
+      {
+        "itemName": "TopJoy Paradicsomlé 0,25",
+        "itemGroup": "üveges_üdítõk",
+        "itemOnStock": 0,
+        "measurementType": {
+          "üveg": {
+            "maxCount": 23,
+            "step": 1
+          },
+          "rekesz": {
+            "maxCount": 9,
+            "multiplier": 24
+          }
+        }
+      }
+    ]
+  }
+]

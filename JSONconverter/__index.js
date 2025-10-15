@@ -1,23 +1,3 @@
-let example = {
-  "itemName": "Lunczer Ágyas Körte",
-  "itemGroup": "pálinkák",
-  "baseUnit": "liter",
-  "itemOnStock": 0,
-  "measurementType": {
-    "cl": {
-      "maxCount": 50,
-      "step": 1,
-      "unit": "centiliter",
-      "toBase": 0.01
-    },
-    "üveg": {
-      "maxCount": 4,
-      "unit": "liter",
-      "toBase": 0.5
-    }
-  }
-}
-
 import stockData from './stockData.json' with { type: 'json' };
 
 import fs from 'fs';
@@ -55,16 +35,13 @@ stock.map(item => {
 // console.log("ITEM: ", item.category);
 
 item.items.map(subItem => {
-    //console.log(subItem.itemGroup);
 
-    if ( subItem.itemGroup === "ásványvizek" ) {
-        console.log("Ásványvíz: ", subItem.itemName);
-    }
-    // delete subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier;
 
-    // subItem.measurementType[Object.keys(subItem.measurementType)[0]].step = 1
+    delete subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier;
 
-/*     console.log(subItem.itemName, Object.keys(subItem.measurementType)[0], subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier,  subItem.measurementType[Object.keys(subItem.measurementType)[0]].step); */
+    subItem.measurementType[Object.keys(subItem.measurementType)[0]].step = 1
+
+        console.log(subItem.itemName, Object.keys(subItem.measurementType)[0], subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier,  subItem.measurementType[Object.keys(subItem.measurementType)[0]].step);
 
 
    //console.log("mt: ", subItem.measurementType);
@@ -141,6 +118,6 @@ let newData = newStockData;
 //fs.writeFileSync("updated.json", JSON.stringify(stock, null, 2), "utf-8");
 // console.log(stock[0].items.forEach((subItem) => { console.log(subItem.measurementType);}));
 
-//console.log("✅ JSON kiírva!", newData);
+console.log("✅ JSON kiírva!");
 
 
