@@ -153,8 +153,10 @@
   border-radius: 1rem;
   width: 80%;
   min-height: 70%;
-  /* max-height: fit-content; */
+  max-height: 90vh;
+  overflow-y: auto; 
   text-align: center;
+  
 }
 .number-grid {
   display: grid;

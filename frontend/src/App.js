@@ -5,11 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DoStock from "./pages/DoStock/DoStock";
 import Home from "./pages/Home/Home";
 
-//import stockData from "./items.json";
-
 function App() {
-  console.log("hello");
-
   return (
     <Router>
       <Routes>

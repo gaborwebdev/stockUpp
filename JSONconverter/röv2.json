@@ -1,0 +1,385 @@
+{
+  "category": "rövid_italok",
+  "items": [
+    {
+      "itemName": "Aperol",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Bacardi Carta Blanca",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Baileys",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Ballantines",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Bombay Sapphire",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Campari",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Finlandia",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Gordons Gin",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Jack Daniels",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Jägermeister",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Jameson",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Johnie W Red",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Martini Bianco",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Martini Extra Dry",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Martini Fiero",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Martini Rosso",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Metaxa",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Unicum",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Unicum Szilva",
+      "itemGroup": "rövid_italok",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 99,
+          "step": 1,
+          "unit": "cl",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 1,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    }
+  ]
+}

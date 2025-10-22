@@ -1,0 +1,205 @@
+{
+  "category": "sörök",
+  "items": [
+    {
+      "itemName": "Edelweiss 0,5",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 19,
+          "step": 1,
+          "toBase": 1,
+          "unit": "bottle"
+        },
+        "crate": {
+          "maxCount": 3,
+          "step": 1,
+          "toBase": 24,
+          "unit": "crate"
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Gösser 0% Citrone 0,33",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 23,
+          "step": 1,
+          "toBase": 1,
+          "unit": "bottle"
+        },
+        "crate": {
+          "maxCount": 9,
+          "multiplier": 24,
+          "toBase": 24,
+          "unit": "crate"
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Gösser Special 0,33",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 23,
+          "step": 1,
+          "toBase": 1,
+          "unit": "bottle"
+        },
+        "crate": {
+          "maxCount": 9,
+          "multiplier": 24,
+          "toBase": 24,
+          "unit": "crate"
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Heineken 0% 0,33",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 23,
+          "step": 1,
+          "toBase": 1,
+          "unit": "bottle"
+        },
+        "crate": {
+          "maxCount": 9,
+          "multiplier": 24,
+          "toBase": 24,
+          "unit": "crate"
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Krusovice 0,5 üveg",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 19,
+          "step": 1,
+          "toBase": 1,
+          "unit": "bottle"
+        },
+        "crate": {
+          "maxCount": 3,
+          "step": 1,
+          "toBase": 24,
+          "unit": "crate"
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Krusovice Csapolt",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "liter": {
+          "maxCount": 29,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 1
+        },
+        "keg": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "keg",
+          "toBase": 30
+        }
+      }
+    },
+    {
+      "itemName": "Mort Subite 20L",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "liter": {
+          "maxCount": 29,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 1
+        },
+        "keg": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "keg",
+          "toBase": 30
+        }
+      }
+    },
+    {
+      "itemName": "Soproni 1895 Csapolt",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "liter": {
+          "maxCount": 29,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 1
+        },
+        "keg": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "keg",
+          "toBase": 30
+        }
+      }
+    },
+    {
+      "itemName": "Soproni Démon 0,5",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 19,
+          "step": 1,
+          "toBase": 1,
+          "unit": "bottle"
+        },
+        "crate": {
+          "maxCount": 3,
+          "step": 1,
+          "toBase": 24,
+          "unit": "crate"
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Soproni Szûz 0,5",
+      "itemGroup": "sörök",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 19,
+          "step": 1,
+          "toBase": 1,
+          "unit": "bottle"
+        },
+        "crate": {
+          "maxCount": 3,
+          "step": 1,
+          "toBase": 24,
+          "unit": "crate"
+        }
+      },
+      "baseUnit": "bottle"
+    }
+  ]
+}

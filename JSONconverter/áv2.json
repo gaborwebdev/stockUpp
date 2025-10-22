@@ -1,0 +1,95 @@
+{
+  "category": "ásványvizek",
+  "items": [
+    {
+      "itemName": "Naturaqua Mentes 0,33",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 23,
+          "step": 1,
+          "toBase": 1
+        },
+        "crate": {
+          "maxCount": 9,
+          "multiplier": 24,
+          "toBase": 24
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Naturaqua Savas 0,33",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 23,
+          "step": 1,
+          "toBase": 1
+        },
+        "crate": {
+          "maxCount": 9,
+          "multiplier": 24,
+          "toBase": 24
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Römerquelle Mentes 0,75",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 20,
+          "step": 1,
+          "toBase": 1
+        },
+        "crate": {
+          "maxCount": 6,
+          "multiplier": 12,
+          "toBase": 12
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Römerquelle Savas 0,75",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 20,
+          "step": 1,
+          "toBase": 1
+        },
+        "crate": {
+          "maxCount": 6,
+          "multiplier": 12,
+          "toBase": 12
+        }
+      },
+      "baseUnit": "bottle"
+    },
+    {
+      "itemName": "Szóda liter",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "liter": {
+          "maxCount": 29,
+          "step": 1,
+          "toBase": 1
+        },
+        "keg": {
+          "maxCount": 10,
+          "step": 1,
+          "toBase": 20
+        }
+      }
+    }
+  ]
+}

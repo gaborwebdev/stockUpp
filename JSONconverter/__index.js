@@ -1,4 +1,4 @@
-import stockData from './stockData.json' with { type: 'json' };
+import stockData from './updated.json' with { type: 'json' };
 
 import fs from 'fs';
 
@@ -13,7 +13,7 @@ let newStockData = [
     } */
 ];
 
-stock.map(item => {
+stock.map((item, index) => {
 /*     if(item.itemGroup === "üveges_üdítõk") {
         item.itemOnStock = 0;
         delete item.itemType;
@@ -34,18 +34,67 @@ stock.map(item => {
         } */
 // console.log("ITEM: ", item.category);
 
-item.items.map(subItem => {
+if ( item.category === "üveges_üdítõk" ) {
+    console.log(index);
+
+    item.items.map(subItem => {
+
+        // add baseUnit
+        // áviz
+        if ( subItem.itemName.includes("XXX0,33") ) {      
+            subItem.baseUnit = "bottle";
+            subItem.measurementType.bottle.toBase = 1;
+            subItem.measurementType.bottle.unit = "bottle";
+            subItem.measurementType.crate.toBase = 24;
+            subItem.measurementType.crate.unit = "crate";
+        } else if ( subItem.itemName.includes("XXX0,75") ) {
+            delete subItem.measurementType; 
+            subItem.baseUnit = "bottle";
+            subItem.measurementType = {
+                bottle: {
+                    maxCount: 29,
+                    step: 1,
+                    unit: "bottle",
+                    toBase: 1
+                }
+            }
+        } else {
+            delete subItem.measurementType;
+            subItem.baseUnit = "bottle";
+            subItem.measurementType = {
+                bottle: {
+                    maxCount: 23,
+                    step: 1,
+                    unit: "bottle",
+                    toBase: 1
+                },
+                crate: {
+                    maxCount: 15,       
+                    step: 1,
+                    unit: "crate",
+                    toBase: 24
+                }
+
+            };
+        }
 
 
-    delete subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier;
+            
+        
+    
+    
+        // delete subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier;
+    
+        //subItem.measurementType[Object.keys(subItem.measurementType)[0]].step = 1
+    
+            //console.log(subItem.itemName, Object.keys(subItem.measurementType)[0], subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier,  subItem.measurementType[Object.keys(subItem.measurementType)[0]].step);
+    
+    
+       //console.log("mt: ", subItem.measurementType);
+       console.log(subItem);
+    });
+}
 
-    subItem.measurementType[Object.keys(subItem.measurementType)[0]].step = 1
-
-        console.log(subItem.itemName, Object.keys(subItem.measurementType)[0], subItem.measurementType[Object.keys(subItem.measurementType)[0]].multiplier,  subItem.measurementType[Object.keys(subItem.measurementType)[0]].step);
-
-
-   //console.log("mt: ", subItem.measurementType);
-});
 /* 
          
          if ( item.itemName.includes("0,33") ) {
@@ -106,16 +155,16 @@ item.items.map(subItem => {
     ///
 
 
-    // newStockData[0].items.push(item);
+    //newStockData[0].items.push(item);
 
 }
 );
 
-
+//console.log(stock[8]);
 
 let newData = newStockData;
 
-//fs.writeFileSync("updated.json", JSON.stringify(stock, null, 2), "utf-8");
+fs.writeFileSync("üd2.json", JSON.stringify(stock[8], null, 2), "utf-8");
 // console.log(stock[0].items.forEach((subItem) => { console.log(subItem.measurementType);}));
 
 console.log("✅ JSON kiírva!");

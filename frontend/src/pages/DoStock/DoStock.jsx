@@ -5,7 +5,7 @@ import CountPopUp from "../../components/CountPopUp/CountPopUp";
 import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 // import stockData from "../../items.json";
-import stockData from "../../updated.json";
+import stockData from "../../stockListData.json";
 
 const DoStock = () => {
   // let stockData = [];
@@ -27,6 +27,7 @@ const DoStock = () => {
   const [currentItem, setCurrentItem] = useState(null);
   const [currentType, setCurrentType] = useState(null);
 
+  /* 
   const handleConfirm = (count) => {
     // TESTING
     //console.log("Confirmed:", currentItem.itemName, currentType);
@@ -56,6 +57,48 @@ const DoStock = () => {
     setPopupOpen(false);
   };
 
+   */
+
+  const handleConfirm = (count) => {
+    if (!currentItem || !currentType) return;
+
+    const itemName = currentItem.itemName;
+    const baseUnit =
+      currentItem.baseUnit || currentItem.baseUnit === ""
+        ? currentItem.baseUnit
+        : "unit";
+    const typeConfig = currentItem.measurementType[currentType] || {};
+
+    // konvertálás a baseUnit-re (ha van toBase használjuk, különben 1)
+    const convertedValue = count * (typeConfig.toBase ?? 1);
+
+    setStockCounts((prev) => {
+      const prevItem = prev[itemName] || {};
+      const prevCounted = Array.isArray(prevItem.counted)
+        ? prevItem.counted
+        : [];
+
+      const newTotal = parseFloat(
+        ((prevItem.total || 0) + convertedValue).toFixed(6)
+      );
+
+      return {
+        ...prev,
+        [itemName]: {
+          // megtartjuk a korábbi baseUnit ha volt, vagy beállítjuk
+          baseUnit: prevItem.baseUnit || baseUnit,
+          total: newTotal,
+          counted: [
+            ...prevCounted,
+            { type: currentType, count, convertedValue },
+          ],
+        },
+      };
+    });
+
+    setPopupOpen(false);
+  };
+
   return (
     <div className="App do-stock">
       <div>
@@ -76,15 +119,28 @@ const DoStock = () => {
                     <div className="title">Számolva:</div>
                     <div className="value">
                       {stockCounts[subItem.itemName] &&
-                      Object.entries(stockCounts[subItem.itemName]).length >
-                        0 ? (
-                        Object.entries(stockCounts[subItem.itemName]).map(
-                          ([type, values]) => (
-                            <div key={type}>
-                              <strong>{type}:</strong> {values.join(" + ")}
-                            </div>
-                          )
-                        )
+                      stockCounts[subItem.itemName].counted?.length > 0 ? (
+                        <div>
+                          {stockCounts[subItem.itemName].counted.map(
+                            (entry, idx) => {
+                              const unitInfo =
+                                subItem.measurementType[entry.type] || {};
+                              const longForm = unitInfo["long-form"] === true;
+
+                              // azt jelenítjük meg: "2 * 24" vagy "2"
+                              const display = longForm
+                                ? `${entry.count} * ${unitInfo.toBase}`
+                                : `${entry.count}`;
+
+                              return (
+                                <span key={idx}>
+                                  {idx > 0 && " + "}
+                                  {display}
+                                </span>
+                              );
+                            }
+                          )}
+                        </div>
                       ) : (
                         <span>-</span>
                       )}
@@ -97,19 +153,14 @@ const DoStock = () => {
                     <div className="total-value">
                       {(() => {
                         const itemCounts = stockCounts[subItem.itemName];
-                        if (!itemCounts) return subItem.itemOnStock || 0;
-
-                        let total = 0;
-                        for (const [type, counts] of Object.entries(
-                          itemCounts
-                        )) {
-                          const multiplier =
-                            subItem.measurementType[type]?.multiplier || 1;
-                          const sum = counts.reduce((a, b) => a + b, 0);
-                          total += sum * multiplier;
+                        if (!itemCounts || !itemCounts.total) {
+                          return subItem.itemOnStock || 0;
                         }
 
-                        return total;
+                        // baseUnit kijelzés (pl. L, cl, db)
+                        const unit = itemCounts.baseUnit || "";
+
+                        return `${itemCounts.total} ${unit}`;
                       })()}
                     </div>
                   </div>

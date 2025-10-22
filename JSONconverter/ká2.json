@@ -1,0 +1,76 @@
+{
+  "category": "ásványvizek",
+  "items": [
+    {
+      "itemName": "Naturaqua Mentes 0,33",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 23,
+          "step": 1
+        },
+        "crate": {
+          "maxCount": 9,
+          "multiplier": 24
+        }
+      }
+    },
+    {
+      "itemName": "Naturaqua Savas 0,33",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 23,
+          "step": 1
+        },
+        "crate": {
+          "maxCount": 9,
+          "multiplier": 24
+        }
+      }
+    },
+    {
+      "itemName": "Römerquelle Mentes 0,75",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 20,
+          "step": 1
+        },
+        "crate": {
+          "maxCount": 6,
+          "multiplier": 12
+        }
+      }
+    },
+    {
+      "itemName": "Römerquelle Savas 0,75",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "measurementType": {
+        "bottle": {
+          "maxCount": 20,
+          "step": 1
+        },
+        "crate": {
+          "maxCount": 6,
+          "multiplier": 12
+        }
+      }
+    },
+    {
+      "itemName": "Szóda liter",
+      "itemGroup": "ásványvizek",
+      "itemOnStock": 0,
+      "measurementType": {
+        "hordó": {
+          "maxCount": 19,
+          "step": 1
+        }
+      }
+    }
+  ]
+}

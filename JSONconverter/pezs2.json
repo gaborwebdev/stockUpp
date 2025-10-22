@@ -1,0 +1,103 @@
+{
+  "category": "pezsgõ",
+  "items": [
+    {
+      "itemName": "Babarczi Habzóbor",
+      "itemGroup": "pezsgõ",
+      "itemOnStock": 0,
+      "baseUnit": "bottle",
+      "measurementType": {
+        "bottle": {
+          "maxCount": 12,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Dissegna Prosecco ",
+      "itemGroup": "pezsgõ",
+      "itemOnStock": 0,
+      "baseUnit": "bottle",
+      "measurementType": {
+        "bottle": {
+          "maxCount": 12,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Hungária ED 0,2",
+      "itemGroup": "pezsgõ",
+      "itemOnStock": 0,
+      "baseUnit": "bottle",
+      "measurementType": {
+        "bottle": {
+          "maxCount": 12,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Hungária ED 0,75",
+      "itemGroup": "pezsgõ",
+      "itemOnStock": 0,
+      "baseUnit": "bottle",
+      "measurementType": {
+        "bottle": {
+          "maxCount": 12,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Törley 0,2",
+      "itemGroup": "pezsgõ",
+      "itemOnStock": 0,
+      "baseUnit": "bottle",
+      "measurementType": {
+        "bottle": {
+          "maxCount": 12,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Törley 0,75",
+      "itemGroup": "pezsgõ",
+      "itemOnStock": 0,
+      "baseUnit": "bottle",
+      "measurementType": {
+        "bottle": {
+          "maxCount": 12,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    },
+    {
+      "itemName": "Törley Alkoholmentes",
+      "itemGroup": "pezsgõ",
+      "itemOnStock": 0,
+      "baseUnit": "bottle",
+      "measurementType": {
+        "bottle": {
+          "maxCount": 12,
+          "step": 1,
+          "unit": "bottle",
+          "toBase": 1
+        }
+      }
+    }
+  ]
+}

@@ -19,9 +19,7 @@ const CountPopUp = ({
   for (let i = step; i <= maxCount; i += step) {
     buttons.push(i.toFixed(step < 1 ? 1 : 0));
   }
-  // console.log("btns: ", buttons);
-
-  console.log("CountPopUp props:", { maxCount, multiplier, onConfirm });
+  // console.log("CountPopUp props:", { maxCount, multiplier, onConfirm });
 
   const handleSelectNumber = (num) => {
     setSelectedButton(num);
@@ -47,10 +45,7 @@ const CountPopUp = ({
             </button>
           ))}
         </div>
-        {/* Felesleges már, talán cleanup!! */}
-        {/*         <p>Max count: {maxCount}</p>
-        <p>Multiplier: {multiplier}</p>
-        <input type="number" min="0" max={maxCount} defaultValue="0" /> */}
+
         <div className="popup-buttons">
           <button
             className="confirm-button"

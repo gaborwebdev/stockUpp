@@ -1,0 +1,165 @@
+{
+  "category": "pálinkák",
+  "items": [
+    {
+      "itemName": "Lunczer Ágyas Körte",
+      "itemGroup": "pálinkák",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 49,
+          "step": 1,
+          "unit": "centiliter",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 0.5
+        }
+      }
+    },
+    {
+      "itemName": "Lunczer Barrique",
+      "itemGroup": "pálinkák",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 49,
+          "step": 1,
+          "unit": "centiliter",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 0.5
+        }
+      }
+    },
+    {
+      "itemName": "Lunczer Cigánymeggy",
+      "itemGroup": "pálinkák",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 49,
+          "step": 1,
+          "unit": "centiliter",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 0.5
+        }
+      }
+    },
+    {
+      "itemName": "Lunczer Meggy-Málna",
+      "itemGroup": "pálinkák",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 49,
+          "step": 1,
+          "unit": "centiliter",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 0.5
+        }
+      }
+    },
+    {
+      "itemName": "Lunczer Prémium Kajszi",
+      "itemGroup": "pálinkák",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 49,
+          "step": 1,
+          "unit": "centiliter",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 0.5
+        }
+      }
+    },
+    {
+      "itemName": "Lunczer Prémium Szilva",
+      "itemGroup": "pálinkák",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 49,
+          "step": 1,
+          "unit": "centiliter",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 0.5
+        }
+      }
+    },
+    {
+      "itemName": "Lunczer Szõlõ-Birs",
+      "itemGroup": "pálinkák",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 49,
+          "step": 1,
+          "unit": "centiliter",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 0.5
+        }
+      }
+    },
+    {
+      "itemName": "Lunczer Vilmoskörte",
+      "itemGroup": "pálinkák",
+      "itemOnStock": 0,
+      "baseUnit": "liter",
+      "measurementType": {
+        "cl": {
+          "maxCount": 49,
+          "step": 1,
+          "unit": "centiliter",
+          "toBase": 0.01
+        },
+        "bottle": {
+          "maxCount": 5,
+          "step": 1,
+          "unit": "liter",
+          "toBase": 0.5
+        }
+      }
+    }
+  ]
+}
