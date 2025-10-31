@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Stock Management App</h1>
+        <h1>Stock Management App v0.1</h1>
         <div className="add-buttons-group">
           <Link to="/do-stock">
             <button className="do-stock-button">Do Stock</button>
