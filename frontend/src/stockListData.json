@@ -537,7 +537,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -558,7 +558,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -579,7 +579,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -600,7 +600,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -621,7 +621,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -642,7 +642,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -663,7 +663,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -684,7 +684,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -705,7 +705,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -726,7 +726,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -747,7 +747,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -768,7 +768,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -789,7 +789,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -810,7 +810,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -831,7 +831,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -852,7 +852,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -873,7 +873,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -894,7 +894,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
@@ -915,7 +915,7 @@
                         "toBase": 0.01
                     },
                     "bottle": {
-                        "maxCount": 1,
+                        "maxCount": 6,
                         "step": 1,
                         "unit": "bottle",
                         "toBase": 1,
