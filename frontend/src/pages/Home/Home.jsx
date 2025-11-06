@@ -15,6 +15,9 @@ const Home = () => {
           <Link to="/edit-items">
             <button className="edit-items-button">Edit Items</button>
           </Link>
+          <Link to="/ble-test">
+            <button className="edit-items-button">BLE Test</button>
+          </Link>
         </div>
       </header>
     </div>
