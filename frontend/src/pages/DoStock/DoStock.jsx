@@ -1,6 +1,6 @@
 import "../../App.css";
 import CountPopUp from "../../components/CountPopUp/CountPopUp";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import stockData from "../../stockListData.json";
 
@@ -18,6 +18,25 @@ const DoStock = () => {
   const [popupOpen, setPopupOpen] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
   const [currentType, setCurrentType] = useState(null);
+
+  // 🆕 Italcsoportok összegyűjtése
+  const allGroups = [
+    ...new Set(stockData.flatMap((cat) => cat.items.map((i) => i.itemGroup))),
+  ];
+  const [selectedGroups, setSelectedGroups] = useState([]);
+
+  // 🧠 Szűrt adatok — ha nincs kiválasztva semmi, akkor mindent mutatunk
+  const filteredData = stockData.map((cat) => ({
+    ...cat,
+    items:
+      selectedGroups.length === 0
+        ? cat.items
+        : cat.items.filter((i) => selectedGroups.includes(i.itemGroup)),
+  }));
+
+  useEffect(() => {
+    document.body.style.overflow = popupOpen ? "hidden" : "auto";
+  }, [popupOpen]);
 
   const handleConfirm = (count) => {
     if (!currentItem || !currentType) return;
@@ -54,50 +73,51 @@ const DoStock = () => {
     setPopupOpen(false);
   };
 
-  // 🔧 "Számolva" rész formázó függvény
-  const renderCountedDisplay = (item, counted) => {
-    return counted
-      .map((entry) => {
-        const { type, count } = entry;
-        const config = item.measurementType[type];
-        const toBase = config?.toBase ?? 1;
-        const showMultiplier = config?.["showMultiplier"] ?? false;
-
-        // 1️⃣ Rekeszes / csomagos megjelenítés (pl. 2*24)
-        if (showMultiplier) {
-          return `${count}*${toBase}`;
-        }
-
-        // 2️⃣ cl → liter átváltás (0.01)
-        if (toBase < 1) {
-          const converted = (count * toBase).toFixed(2);
-          return converted;
-        }
-
-        // 3️⃣ pl. 0.5L üveg (liter-alapú kijelzés)
-        const converted = (count * toBase).toFixed(2);
-        return converted;
-      })
-      .join(" + ");
-  };
-
   return (
     <div className="App do-stock">
-      <div>
-        <header className="add-buttons-group do-stock-header">
-          <p>New stock</p>
-          <Link to="/">
-            <button className="add-buttons case">Go Back</button>
-          </Link>
-        </header>
+      <header className="add-buttons-group do-stock-header">
+        <p>New stock</p>
+        <Link to="/">
+          <button className="add-buttons case">Go Back</button>
+        </Link>
+      </header>
 
-        {stockData.map((item, index) => (
+      {/* 🧩 Italcsoport szűrő gombok */}
+      <div className="group-filters">
+        {allGroups.map((group) => (
+          <button
+            key={group}
+            className={selectedGroups.includes(group) ? "active" : ""}
+            onClick={() =>
+              setSelectedGroups((prev) =>
+                prev.includes(group)
+                  ? prev.filter((g) => g !== group)
+                  : [...prev, group]
+              )
+            }
+          >
+            {group}
+          </button>
+        ))}
+        <button className="reset-filter" onClick={() => setSelectedGroups([])}>
+          Összes
+        </button>
+      </div>
+
+      {/* 🔽 Szűrt lista */}
+      {filteredData.map((item, index) => {
+        // Csak azok az elemek, amelyek megfelelnek az aktív szűrőknek
+        const visibleItems = item.items;
+
+        // Ha nincs megjelenítendő ital ebben a kategóriában, ne mutassuk a címet sem
+        if (visibleItems.length === 0) return null;
+
+        return (
           <Fragment key={index}>
             <h3>Category: {item.category}</h3>
 
-            {item.items.map((subItem, subIndex) => {
+            {visibleItems.map((subItem, subIndex) => {
               const countedData = stockCounts[subItem.itemName]?.counted || [];
-
               return (
                 <div className="row-in-stock" key={subIndex}>
                   <div className="item-name-and-counted">
@@ -106,41 +126,37 @@ const DoStock = () => {
                     <div className="counted-pieces">
                       <div className="title">Számolva:</div>
                       <div className="value">
-                        {stockCounts[subItem.itemName]?.counted ? (
-                          stockCounts[subItem.itemName].counted.map(
-                            (entry, idx) => {
-                              const unit = entry.type;
-                              const count = entry.count;
-                              const unitInfo = subItem.measurementType[unit];
-                              const toBase = unitInfo?.toBase ?? 1;
-                              const isLongForm =
-                                unitInfo?.["long-form"] === true;
+                        {countedData.length > 0 ? (
+                          countedData.map((entry, idx) => {
+                            const unit = entry.type;
+                            const count = entry.count;
+                            const unitInfo = subItem.measurementType[unit];
+                            const toBase = unitInfo?.toBase ?? 1;
+                            const isLongForm = unitInfo?.["long-form"] === true;
 
-                              let displayValue;
+                            let displayValue;
 
-                              if (isLongForm) {
-                                displayValue = `${count}*${toBase}`;
-                              } else if (
-                                ["liter", "cl", "gramm", "kg"].includes(
-                                  unitInfo?.unit
-                                )
-                              ) {
-                                const value = count * toBase;
-                                // csak akkor írjuk ki 2 tizedessel, ha nem egész szám
-                                displayValue =
-                                  value % 1 === 0 ? value : value.toFixed(2);
-                              } else {
-                                displayValue = Math.round(count * toBase);
-                              }
-
-                              return (
-                                <span key={idx}>
-                                  {idx > 0 && " + "}
-                                  {displayValue}
-                                </span>
-                              );
+                            if (isLongForm) {
+                              displayValue = `${count}*${toBase}`;
+                            } else if (
+                              ["liter", "cl", "gramm", "kg"].includes(
+                                unitInfo?.unit
+                              )
+                            ) {
+                              const value = count * toBase;
+                              displayValue =
+                                value % 1 === 0 ? value : value.toFixed(2);
+                            } else {
+                              displayValue = Math.round(count * toBase);
                             }
-                          )
+
+                            return (
+                              <span key={idx}>
+                                {idx > 0 && " + "}
+                                {displayValue}
+                              </span>
+                            );
+                          })
                         ) : (
                           <span>-</span>
                         )}
@@ -159,13 +175,11 @@ const DoStock = () => {
                               ? itemData.total
                               : subItem.itemOnStock || 0;
 
-                          // Ellenőrizzük, hogy kell-e tizedes formátum
                           const isDecimalNeeded =
                             subItem.itemGroup === "pálinkák" ||
                             subItem.itemGroup === "rövid italok" ||
                             (subItem.baseUnit === "liter" && total % 1 !== 0);
 
-                          // Ha kell tizedes, toFixed(2), ha nem, akkor egész
                           return isDecimalNeeded
                             ? total.toFixed(2)
                             : Math.round(total);
@@ -197,9 +211,10 @@ const DoStock = () => {
               );
             })}
           </Fragment>
-        ))}
-      </div>
+        );
+      })}
 
+      {/* PopUp */}
       {popupOpen && currentItem && (
         <CountPopUp
           itemName={currentItem.itemName}
