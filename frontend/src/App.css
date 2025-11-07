@@ -240,10 +240,100 @@ html, body{
 
 
 /* BLE PopUp Overlay!! */
-.popup-overlay-ble{
-
+/* BLE PopUp (ugyanolyan stílus, mint a CountPopUp, extra státuszszínekkel) */
+.popup-overlay-ble {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
 }
 
-.popup-contemnt-ble{
+.popup-content-ble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgb(4, 33, 163);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  text-align: center;
+  color: rgb(250, 246, 246);
+  font-size: calc(10px + 2vmin);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
 
+.popup-content-ble h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.popup-content-ble p {
+  margin-bottom: 1rem;
+  color: #eeb3b3;
+  font-size: 1rem;
+}
+
+.popup-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* Alap gombstílus */
+.popup-content-ble button {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Gomb státusz színek */
+.popup-content-ble button.connect-btn {
+  background-color: #2196f3;
+}
+.popup-content-ble button.connect-btn:hover {
+  background-color: #42a5f5;
+  transform: scale(1.05);
+}
+
+.popup-content-ble button.measure-btn {
+  background-color: #4caf50;
+}
+.popup-content-ble button.measure-btn:hover {
+  background-color: #66bb6a;
+  transform: scale(1.05);
+}
+
+.popup-content-ble button.close-btn,
+.popup-content-ble button.not-available-btn {
+  background-color: #f44336;
+}
+.popup-content-ble button.close-btn:hover,
+.popup-content-ble button.not-available-btn:hover {
+  background-color: #e57373;
+  transform: scale(1.05);
+}
+
+/* Extra szöveg státuszhoz */
+.popup-content-ble .status {
+  font-style: italic;
+  color: #ffd166;
+  margin-bottom: 0.5rem;
 }

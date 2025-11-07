@@ -3,6 +3,7 @@ import CountPopUp from "../../components/CountPopUp/CountPopUp";
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import stockData from "../../stockListData.json";
+import BleMeasurePopup from "../../components/BLEMeasurePopUp/BleMeasurePopup";
 
 const DoStock = () => {
   const [stockCounts, setStockCounts] = useState(() => {
@@ -18,6 +19,10 @@ const DoStock = () => {
   const [popupOpen, setPopupOpen] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
   const [currentType, setCurrentType] = useState(null);
+
+  // BLE setup
+  const [blePopupOpen, setBlePopupOpen] = useState(false);
+  const [bleItem, setBleItem] = useState(null);
 
   // 🆕 Italcsoportok összegyűjtése
   const allGroups = [
@@ -71,6 +76,12 @@ const DoStock = () => {
     });
 
     setPopupOpen(false);
+  };
+
+  const handleBleMeasureClick = (item) => {
+    console.log("BLE mérés indítása:", item.itemName);
+    setBleItem(item);
+    setBlePopupOpen(true);
   };
 
   return (
@@ -205,6 +216,15 @@ const DoStock = () => {
                             </div>
                           )
                         )}
+                      {/* BLE */}
+                      {subItem.isBleMeasurable && (
+                        <button
+                          className="add-buttons ble-button"
+                          onClick={() => handleBleMeasureClick(subItem)}
+                        >
+                          Mérés BLE-vel
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -222,6 +242,16 @@ const DoStock = () => {
           step={currentItem.measurementType[currentType].step}
           onConfirm={handleConfirm}
           onClose={() => setPopupOpen(false)}
+          blePopupOpen={blePopupOpen}
+          setBlePopupOpen={setBlePopupOpen}
+          bleItem={bleItem}
+        />
+      )}
+      {/* BLE PopUp */}
+      {blePopupOpen && bleItem && (
+        <BleMeasurePopup
+          item={bleItem}
+          onClose={() => setBlePopupOpen(false)}
         />
       )}
     </div>

@@ -29,17 +29,21 @@ export default function BleMeasurePopup({ item, onClose }) {
     <div className="popup-overlay-ble">
       <div className="popup-content-ble">
         <h2>{item.itemName}</h2>
-        <p>BLE állapot: {status}</p>
+        <p className="status">BLE állapot: {status}</p>
 
         {status === "not_connected" && (
-          <button onClick={handleConnect}>Csatlakozás BLE-hez</button>
+          <button className="connect-btn" onClick={handleConnect}>
+            Csatlakozás BLE-hez
+          </button>
         )}
 
         {status === "connecting" && <p>Csatlakozás folyamatban...</p>}
 
         {status === "connected" && (
           <>
-            <button onClick={handleMeasure}>Mérés indítása</button>
+            <button className="measure-btn" onClick={handleMeasure}>
+              Mérés indítása
+            </button>
           </>
         )}
 
@@ -48,8 +52,15 @@ export default function BleMeasurePopup({ item, onClose }) {
         )}
 
         <div className="popup-footer">
-          <button onClick={handleNotAvailable}>Nincs eszköz</button>
-          <button onClick={onClose}>Bezárás</button>
+          <button
+            className="not-available-btn"
+            onClick={handleNotAvailable}
+          >
+            Nincs eszköz
+          </button>
+          <button className="close-btn" onClick={onClose}>
+            Bezárás
+          </button>
         </div>
       </div>
     </div>

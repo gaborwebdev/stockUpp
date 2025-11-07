@@ -7,6 +7,9 @@ const CountPopUp = ({
   step = 1,
   onConfirm,
   onClose,
+  blePopupOpen,
+  bleItem,
+  setBlePopupOpen,
 }) => {
   const [selectedButton, setSelectedButton] = useState(null);
   const [count, setCount] = useState(0);
@@ -30,6 +33,9 @@ const CountPopUp = ({
     <div className="popup-overlay">
       <div className="popup-inner">
         <h2>{itemName}</h2>
+        <div>
+          
+        </div>
         <div className="number-grid">
           {buttons.map((num) => (
             <button
