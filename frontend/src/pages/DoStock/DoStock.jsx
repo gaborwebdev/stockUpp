@@ -78,6 +78,46 @@ const DoStock = () => {
     setPopupOpen(false);
   };
 
+  const handleBleConfirm = (measuredCl, item) => {
+  if (!item) return;
+
+  const itemName = item.itemName;
+  const baseUnit = item.baseUnit || "unit";
+
+  // Mivel BLE esetén a mért érték már "cl" vagy "liter" lehet, nézzük meg
+  // a megfelelő konverziót, ha létezik
+  const typeKey = "BLE"; // opcionális típusnév, ha később szeretnéd megkülönböztetni
+  const toBase = item.measurementType?.cl?.toBase ?? 1;
+  const convertedValue = measuredCl * toBase;
+
+  setStockCounts((prev) => {
+    const prevItem = prev[itemName] || {};
+    const prevCounted = Array.isArray(prevItem.counted)
+      ? prevItem.counted
+      : [];
+
+    const newTotal = parseFloat(
+      ((prevItem.total || 0) + convertedValue).toFixed(6)
+    );
+
+    return {
+      ...prev,
+      [itemName]: {
+        baseUnit: prevItem.baseUnit || baseUnit,
+        total: newTotal,
+        counted: [
+          ...prevCounted,
+          { type: typeKey, count: measuredCl, convertedValue },
+        ],
+      },
+    };
+  });
+
+  console.log(`✅ BLE mérés elmentve: ${itemName} → ${measuredCl} cl`);
+  setBlePopupOpen(false);
+};
+
+
   const handleBleMeasureClick = (item) => {
     console.log("BLE mérés indítása:", item.itemName);
     setBleItem(item);
@@ -252,6 +292,7 @@ const DoStock = () => {
         <BleMeasurePopup
           item={bleItem}
           onClose={() => setBlePopupOpen(false)}
+          onConfirm={(measuredCl) => handleBleConfirm(measuredCl, bleItem)}
         />
       )}
     </div>
