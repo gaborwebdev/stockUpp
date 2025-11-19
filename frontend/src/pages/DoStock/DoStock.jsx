@@ -4,6 +4,7 @@ import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import stockData from "../../stockListData.json";
 import BleMeasurePopup from "../../components/BLEMeasurePopUp/BleMeasurePopup";
+import BleDebugPopup from "../../components/debugPopup/debugPopup";
 
 const DoStock = () => {
   const [stockCounts, setStockCounts] = useState(() => {
@@ -29,6 +30,9 @@ const DoStock = () => {
     ...new Set(stockData.flatMap((cat) => cat.items.map((i) => i.itemGroup))),
   ];
   const [selectedGroups, setSelectedGroups] = useState([]);
+
+  // Debug popup state
+  const [debugOpen, setDebugOpen] = useState(false);
 
   // 🧠 Szűrt adatok — ha nincs kiválasztva semmi, akkor mindent mutatunk
   const filteredData = stockData.map((cat) => ({
@@ -176,6 +180,10 @@ const DoStock = () => {
         <Link to="/">
           <button className="add-buttons case">Go Back</button>
         </Link>
+
+        <button className="debug-button" onClick={() => setDebugOpen(true)}>
+          BLE Debug
+        </button>
       </header>
 
       {/* 🧩 Italcsoport szűrő gombok */}
@@ -340,6 +348,8 @@ const DoStock = () => {
           onConfirm={(measuredCl) => handleBleConfirm(measuredCl, bleItem)}
         />
       )}
+      {/* BLE Debug PopUp */}
+      {debugOpen && <BleDebugPopup onClose={() => setDebugOpen(false)} />}
     </div>
   );
 };

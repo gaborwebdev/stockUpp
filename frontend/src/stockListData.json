@@ -252,6 +252,9 @@
         "itemName": "Lunczer Ágyas Körte",
         "itemGroup": "pálinkák",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
+        "emptyBottleWeight": 753,
+        "density": 8.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -274,6 +277,9 @@
         "itemName": "Lunczer Barrique",
         "itemGroup": "pálinkák",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
+        "emptyBottleWeight": 753,
+        "density": 8.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -296,6 +302,9 @@
         "itemName": "Lunczer Cigánymeggy",
         "itemGroup": "pálinkák",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
+        "emptyBottleWeight": 753,
+        "density": 8.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -318,6 +327,9 @@
         "itemName": "Lunczer Meggy-Málna",
         "itemGroup": "pálinkák",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
+        "emptyBottleWeight": 753,
+        "density": 8.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -340,6 +352,9 @@
         "itemName": "Lunczer Prémium Kajszi",
         "itemGroup": "pálinkák",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
+        "emptyBottleWeight": 753,
+        "density": 8.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -362,6 +377,9 @@
         "itemName": "Lunczer Prémium Szilva",
         "itemGroup": "pálinkák",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
+        "emptyBottleWeight": 753,
+        "density": 8.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -384,6 +402,9 @@
         "itemName": "Lunczer Szõlõ-Birs",
         "itemGroup": "pálinkák",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
+        "emptyBottleWeight": 753,
+        "density": 8.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -406,6 +427,9 @@
         "itemName": "Lunczer Vilmoskörte",
         "itemGroup": "pálinkák",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
+        "emptyBottleWeight": 753,
+        "density": 8.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -536,6 +560,9 @@
         "itemName": "Aperol",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
+        "emptyBottleWeight": 597,
+        "density": 10.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -558,6 +585,7 @@
         "itemName": "Bacardi Carta Blanca",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -580,6 +608,7 @@
         "itemName": "Baileys",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -602,6 +631,7 @@
         "itemName": "Ballantines",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -624,6 +654,7 @@
         "itemName": "Bombay Sapphire",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -646,6 +677,7 @@
         "itemName": "Campari",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -668,6 +700,7 @@
         "itemName": "Finlandia",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -690,6 +723,7 @@
         "itemName": "Gordons Gin",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -712,6 +746,7 @@
         "itemName": "Jack Daniels",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -734,6 +769,7 @@
         "itemName": "Jägermeister",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -756,6 +792,7 @@
         "itemName": "Jameson",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -778,6 +815,7 @@
         "itemName": "Johnie W Red",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -800,6 +838,7 @@
         "itemName": "Martini Bianco",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -822,6 +861,7 @@
         "itemName": "Martini Extra Dry",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -844,6 +884,7 @@
         "itemName": "Martini Fiero",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -866,6 +907,7 @@
         "itemName": "Martini Rosso",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -888,6 +930,7 @@
         "itemName": "Metaxa",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -910,6 +953,7 @@
         "itemName": "Unicum",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -932,6 +976,7 @@
         "itemName": "Unicum Szilva",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
+        "isBleInLiter": true,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 /**
  * Props:
- * - item: objektum az ital adataival (item.uvegSuly (g), item.fajsuly (g/cl) opcionális)
+ * - item: objektum az ital adataival (item.emptyBottleWeight (g), item.density (g/cl) opcionális)
  * - onClose: () => void
  * - onConfirm?: (clValue:number) => void  // opcionális: ha szeretnéd menteni a mért cl-t
  */
@@ -13,6 +13,7 @@ export default function BleMeasurePopup({ item, onClose, onConfirm }) {
   const [netWeight, setNetWeight] = useState(null); // nettó (mért - uveg)
   const [clValue, setClValue] = useState(null); // számított cl
   const [errorMsg, setErrorMsg] = useState(null);
+  const [bytesDebug, setBytesDebug] = useState([]); //DEBUG: ide mentjük a nyers byte-okat
 
   // helyőrző UUID-ek (a te kódban használtak)
   const SERVICE_UUID = "0000fff0-0000-1000-8000-00805f9b34fb";
@@ -24,30 +25,37 @@ export default function BleMeasurePopup({ item, onClose, onConfirm }) {
   const valueHandlerRef = useRef(null);
 
   // default értékek, ha nincs a JSON-ban
-  const uvegSuly = item?.uvegSuly ?? 0; // gramm
-  const fajsuly = item?.fajsuly ?? 1; // g / cl (ha nincs, 1 g/cl -> 1g = 1cl) - igazítsd ha mást szeretnél
+  const emptyBottleWeight = item?.emptyBottleWeight ?? 0; // gramm
+  const density = item?.density ?? 1; // g / cl (ha nincs, 1 g/cl -> 1g = 1cl) - igazítsd ha mást szeretnél
 
   // Helper: feldolgozza a karakterisztikumból jövő adatot
   const handleCharacteristicValue = (event) => {
     try {
       const buffer = event.target.value.buffer;
       const bytes = Array.from(new Uint8Array(buffer));
+      setBytesDebug(bytes); // DEBUG: mutatjuk a nyers byte-okat
       console.log("BLE bytes:", bytes);
 
       // --- itt a te tesztkódod alapján használjuk a 18. bájtot ---
       // vedd figyelembe: ellenőrizzük, hogy létezik-e az index
       if (bytes.length > 18) {
-        const g = bytes[18]; // egyszerű demo: az utolsó bájt a gramm
-        const measured = Number(g);
+        //const g = bytes[18]; // egyszerű demo: az utolsó bájt a gramm
+        //const measured = Number(g);
+
+        const high = bytes[5] ?? 0;
+        const low = bytes[6] ?? 0;
+        const measured = high * 256 + low;
         setRawWeight(measured);
 
         // nettó és cl számítás
-        const nett = measured - uvegSuly;
+        const nett = measured - emptyBottleWeight;
         setNetWeight(nett > 0 ? nett : 0);
 
-        const cl = nett > 0 ? nett / (fajsuly || 1) : 0;
+        const cl = nett > 0 ? nett / (density || 1) : 0;
         setClValue(Number(cl.toFixed(2)));
-        console.log(`Parsed weight: ${measured} g, nettó: ${nett} g, cl: ${cl.toFixed(2)}`);
+        console.log(
+          `Parsed weight: ${measured} g, nettó: ${nett} g, cl: ${cl.toFixed(2)}`
+        );
       } else {
         // ha más a payload forma, csak logoljuk, ne törjön a komponens
         console.warn("BLE payload túl rövid a várt 19 bájthoz:", bytes.length);
@@ -189,7 +197,10 @@ export default function BleMeasurePopup({ item, onClose, onConfirm }) {
       <div className="popup-content-ble">
         <h2>{item?.itemName ?? "Ismeretlen tétel"}</h2>
 
-        <p className="status">BLE állapot: {status}{deviceName ? ` — ${deviceName}` : ""}</p>
+        <p className="status">
+          BLE állapot: {status}
+          {deviceName ? ` — ${deviceName}` : ""}
+        </p>
 
         {status === "not_connected" && (
           <>
@@ -205,12 +216,26 @@ export default function BleMeasurePopup({ item, onClose, onConfirm }) {
         {status === "connected" && (
           <>
             <p>Mért súly: {rawWeight ?? "—"} g</p>
-            <p>Üveg súlya: {uvegSuly} g</p>
+            <p>Üveg súlya: {emptyBottleWeight} g</p>
             <p>Nettó tömeg: {netWeight ?? "—"} g</p>
             <p>Számolt mennyiség: {clValue ?? "—"} cl</p>
 
-            <div style={{ width: "100%", marginTop: "1rem", display: "flex", gap: "0.5rem" }}>
-              <button className="measure-btn" onClick={() => console.log("Demo: measurement read (notifications already running)")}>
+            <div
+              style={{
+                width: "100%",
+                marginTop: "1rem",
+                display: "flex",
+                gap: "0.5rem",
+              }}
+            >
+              <button
+                className="measure-btn"
+                onClick={() =>
+                  console.log(
+                    "Demo: measurement read (notifications already running)"
+                  )
+                }
+              >
                 Frissítés (demo)
               </button>
               <button
@@ -227,16 +252,27 @@ export default function BleMeasurePopup({ item, onClose, onConfirm }) {
         {status === "error" && (
           <>
             <p style={{ color: "salmon" }}>Hiba: {errorMsg}</p>
-            <button className="not-available-btn" onClick={() => setStatus("not_available")}>
+            <button
+              className="not-available-btn"
+              onClick={() => setStatus("not_available")}
+            >
               Jelzem: nincs eszköz
             </button>
           </>
         )}
 
-        {status === "not_available" && <p style={{ color: "red" }}>Eszköz nem elérhető.</p>}
+        {status === "not_available" && (
+          <p style={{ color: "red" }}>Eszköz nem elérhető.</p>
+        )}
 
         <div className="popup-footer">
-          <button className="not-available-btn" onClick={() => { console.log("User: device not available"); setStatus("not_available"); }}>
+          <button
+            className="not-available-btn"
+            onClick={() => {
+              console.log("User: device not available");
+              setStatus("not_available");
+            }}
+          >
             Nincs eszköz
           </button>
           <button
