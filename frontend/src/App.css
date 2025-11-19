@@ -265,8 +265,7 @@ html, body{
   max-height: 90vh;
   overflow-y: auto;
   text-align: center;
-  /* color: rgb(250, 246, 246); */
-  color:#0d922e;
+  color: rgb(250, 246, 246);
   font-size: calc(10px + 2vmin);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }

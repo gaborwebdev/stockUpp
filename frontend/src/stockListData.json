@@ -278,8 +278,8 @@
         "itemGroup": "pálinkák",
         "isBleMeasurable": true,
         "isBleInLiter": true,
-        "emptyBottleWeight": 753,
-        "density": 8.8,
+        "emptyBottleWeight": 644,
+        "density": 9.5,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -586,6 +586,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 593,
+        "density": 9.6,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -609,6 +611,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 639,
+        "density": 10.3,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -632,6 +636,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 607,
+        "density": 9.3,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -655,6 +661,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 0,
+        "density": 10,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -678,6 +686,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 567,
+        "density": 10.6,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -701,6 +711,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 621,
+        "density": 9.0,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -724,6 +736,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 435,
+        "density": 9.5,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -747,6 +761,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 570,
+        "density": 9.3,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -770,6 +786,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 734,
+        "density": 9.8,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -793,6 +811,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 542,
+        "density": 9.5,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -816,6 +836,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 514,
+        "density": 9.2,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -839,6 +861,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 600,
+        "density": 10.5,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -862,6 +886,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 600,
+        "density": 10.2,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -885,6 +911,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 600,
+        "density": 10.2,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -904,10 +932,12 @@
         }
       },
       {
-        "itemName": "Martini Rosso",
+        "itemName": "Martini Rosso 0.75L",
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 504,
+        "density": 10.2,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -931,6 +961,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 504,
+        "density": 9.4,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -954,6 +986,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 617,
+        "density": 10,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
@@ -977,6 +1011,8 @@
         "itemGroup": "rövid_italok",
         "isBleMeasurable": true,
         "isBleInLiter": true,
+        "emptyBottleWeight": 621,
+        "density": 10.1,
         "itemOnStock": 0,
         "baseUnit": "liter",
         "measurementType": {
