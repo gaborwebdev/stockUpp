@@ -78,45 +78,90 @@ const DoStock = () => {
     setPopupOpen(false);
   };
 
+  //   const handleBleConfirm = (measuredCl, item) => {
+  //   if (!item) return;
+
+  //   const itemName = item.itemName;
+  //   const baseUnit = item.baseUnit || "unit";
+
+  //   // Mivel BLE esetén a mért érték már "cl" vagy "liter" lehet, nézzük meg
+  //   // a megfelelő konverziót, ha létezik
+  //   const typeKey = "BLE"; // opcionális típusnév, ha később szeretnéd megkülönböztetni
+  //   const toBase = item.measurementType?.cl?.toBase ?? 1;
+  //   const convertedValue = measuredCl * toBase;
+
+  //   setStockCounts((prev) => {
+  //     const prevItem = prev[itemName] || {};
+  //     const prevCounted = Array.isArray(prevItem.counted)
+  //       ? prevItem.counted
+  //       : [];
+
+  //     const newTotal = parseFloat(
+  //       ((prevItem.total || 0) + convertedValue).toFixed(6)
+  //     );
+
+  //     return {
+  //       ...prev,
+  //       [itemName]: {
+  //         baseUnit: prevItem.baseUnit || baseUnit,
+  //         total: newTotal,
+  //         counted: [
+  //           ...prevCounted,
+  //           { type: typeKey, count: measuredCl, convertedValue },
+  //         ],
+  //       },
+  //     };
+  //   });
+
+  //   console.log(`✅ BLE mérés elmentve: ${itemName} → ${measuredCl} cl`);
+  //   setBlePopupOpen(false);
+  // };
+
   const handleBleConfirm = (measuredCl, item) => {
-  if (!item) return;
+    if (!item) return;
 
-  const itemName = item.itemName;
-  const baseUnit = item.baseUnit || "unit";
+    const itemName = item.itemName;
 
-  // Mivel BLE esetén a mért érték már "cl" vagy "liter" lehet, nézzük meg
-  // a megfelelő konverziót, ha létezik
-  const typeKey = "BLE"; // opcionális típusnév, ha később szeretnéd megkülönböztetni
-  const toBase = item.measurementType?.cl?.toBase ?? 1;
-  const convertedValue = measuredCl * toBase;
+    // Rövid italok és pálinkák literben tárolják a BLE mérést
+    const shouldSaveInLiter =
+      item.itemGroup === "rövid_italok" || item.itemGroup === "pálinkák";
 
-  setStockCounts((prev) => {
-    const prevItem = prev[itemName] || {};
-    const prevCounted = Array.isArray(prevItem.counted)
-      ? prevItem.counted
-      : [];
+    const baseUnit = shouldSaveInLiter ? "liter" : "cl";
 
-    const newTotal = parseFloat(
-      ((prevItem.total || 0) + convertedValue).toFixed(6)
-    );
+    // konverzió literbe, ha szükséges
+    const convertedValue = shouldSaveInLiter
+      ? measuredCl * 0.01 // cl → liter
+      : measuredCl; // marad cl
 
-    return {
-      ...prev,
-      [itemName]: {
-        baseUnit: prevItem.baseUnit || baseUnit,
-        total: newTotal,
-        counted: [
-          ...prevCounted,
-          { type: typeKey, count: measuredCl, convertedValue },
-        ],
-      },
-    };
-  });
+    setStockCounts((prev) => {
+      const prevItem = prev[itemName] || {};
+      const prevCounted = Array.isArray(prevItem.counted)
+        ? prevItem.counted
+        : [];
 
-  console.log(`✅ BLE mérés elmentve: ${itemName} → ${measuredCl} cl`);
-  setBlePopupOpen(false);
-};
+      const newTotal = parseFloat(
+        ((prevItem.total || 0) + convertedValue).toFixed(6)
+      );
 
+      return {
+        ...prev,
+        [itemName]: {
+          baseUnit,
+          total: newTotal,
+          counted: [
+            ...prevCounted,
+            {
+              type: shouldSaveInLiter ? "BLE_liter" : "BLE_cl",
+              count: measuredCl,
+              convertedValue,
+            },
+          ],
+        },
+      };
+    });
+
+    setBlePopupOpen(false);
+  };
 
   const handleBleMeasureClick = (item) => {
     console.log("BLE mérés indítása:", item.itemName);
