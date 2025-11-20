@@ -1,3 +1,4 @@
+// DoStock.jsx
 import "../../App.css";
 import CountPopUp from "../../components/CountPopUp/CountPopUp";
 import { Fragment, useEffect, useState } from "react";
@@ -5,6 +6,7 @@ import { Link } from "react-router-dom";
 import stockData from "../../stockListData.json";
 import BleMeasurePopup from "../../components/BLEMeasurePopUp/BleMeasurePopup";
 import BleDebugPopup from "../../components/debugPopup/debugPopup";
+import StockRowEditor from "../../components/StockRowEditor/StockRowEditor.jsx";
 
 const DoStock = () => {
   const [stockCounts, setStockCounts] = useState(() => {
@@ -24,6 +26,9 @@ const DoStock = () => {
   // BLE setup
   const [blePopupOpen, setBlePopupOpen] = useState(false);
   const [bleItem, setBleItem] = useState(null);
+
+  // Current edit context: { itemName, index } vagy null
+  const [currentEdit, setCurrentEdit] = useState(null);
 
   // 🆕 Italcsoportok összegyűjtése
   const allGroups = [
@@ -47,6 +52,7 @@ const DoStock = () => {
     document.body.style.overflow = popupOpen ? "hidden" : "auto";
   }, [popupOpen]);
 
+  // HELP: replace-or-append on confirm
   const handleConfirm = (count) => {
     if (!currentItem || !currentType) return;
 
@@ -59,11 +65,24 @@ const DoStock = () => {
     setStockCounts((prev) => {
       const prevItem = prev[itemName] || {};
       const prevCounted = Array.isArray(prevItem.counted)
-        ? prevItem.counted
+        ? [...prevItem.counted]
         : [];
 
+      if (
+        currentEdit &&
+        currentEdit.itemName === itemName &&
+        Number.isFinite(currentEdit.index)
+      ) {
+        // Replace existing entry at index
+        const idx = currentEdit.index;
+        prevCounted[idx] = { type: currentType, count, convertedValue };
+      } else {
+        // Append as new
+        prevCounted.push({ type: currentType, count, convertedValue });
+      }
+
       const newTotal = parseFloat(
-        ((prevItem.total || 0) + convertedValue).toFixed(6)
+        prevCounted.reduce((s, e) => s + (e.convertedValue || 0), 0).toFixed(6)
       );
 
       return {
@@ -71,56 +90,17 @@ const DoStock = () => {
         [itemName]: {
           baseUnit: prevItem.baseUnit || baseUnit,
           total: newTotal,
-          counted: [
-            ...prevCounted,
-            { type: currentType, count, convertedValue },
-          ],
+          counted: prevCounted,
         },
       };
     });
 
+    // reset edit context and close popup
+    setCurrentEdit(null);
     setPopupOpen(false);
   };
 
-  //   const handleBleConfirm = (measuredCl, item) => {
-  //   if (!item) return;
-
-  //   const itemName = item.itemName;
-  //   const baseUnit = item.baseUnit || "unit";
-
-  //   // Mivel BLE esetén a mért érték már "cl" vagy "liter" lehet, nézzük meg
-  //   // a megfelelő konverziót, ha létezik
-  //   const typeKey = "BLE"; // opcionális típusnév, ha később szeretnéd megkülönböztetni
-  //   const toBase = item.measurementType?.cl?.toBase ?? 1;
-  //   const convertedValue = measuredCl * toBase;
-
-  //   setStockCounts((prev) => {
-  //     const prevItem = prev[itemName] || {};
-  //     const prevCounted = Array.isArray(prevItem.counted)
-  //       ? prevItem.counted
-  //       : [];
-
-  //     const newTotal = parseFloat(
-  //       ((prevItem.total || 0) + convertedValue).toFixed(6)
-  //     );
-
-  //     return {
-  //       ...prev,
-  //       [itemName]: {
-  //         baseUnit: prevItem.baseUnit || baseUnit,
-  //         total: newTotal,
-  //         counted: [
-  //           ...prevCounted,
-  //           { type: typeKey, count: measuredCl, convertedValue },
-  //         ],
-  //       },
-  //     };
-  //   });
-
-  //   console.log(`✅ BLE mérés elmentve: ${itemName} → ${measuredCl} cl`);
-  //   setBlePopupOpen(false);
-  // };
-
+  // BLE confirm also supports replace
   const handleBleConfirm = (measuredCl, item) => {
     if (!item) return;
 
@@ -140,11 +120,32 @@ const DoStock = () => {
     setStockCounts((prev) => {
       const prevItem = prev[itemName] || {};
       const prevCounted = Array.isArray(prevItem.counted)
-        ? prevItem.counted
+        ? [...prevItem.counted]
         : [];
 
+      if (
+        currentEdit &&
+        currentEdit.itemName === itemName &&
+        Number.isFinite(currentEdit.index)
+      ) {
+        // Replace existing entry at index
+        const idx = currentEdit.index;
+        prevCounted[idx] = {
+          type: shouldSaveInLiter ? "BLE_liter" : "BLE_cl",
+          count: measuredCl,
+          convertedValue,
+        };
+      } else {
+        // Append
+        prevCounted.push({
+          type: shouldSaveInLiter ? "BLE_liter" : "BLE_cl",
+          count: measuredCl,
+          convertedValue,
+        });
+      }
+
       const newTotal = parseFloat(
-        ((prevItem.total || 0) + convertedValue).toFixed(6)
+        prevCounted.reduce((s, e) => s + (e.convertedValue || 0), 0).toFixed(6)
       );
 
       return {
@@ -152,23 +153,19 @@ const DoStock = () => {
         [itemName]: {
           baseUnit,
           total: newTotal,
-          counted: [
-            ...prevCounted,
-            {
-              type: shouldSaveInLiter ? "BLE_liter" : "BLE_cl",
-              count: measuredCl,
-              convertedValue,
-            },
-          ],
+          counted: prevCounted,
         },
       };
     });
 
+    // reset edit context and close popup
+    setCurrentEdit(null);
     setBlePopupOpen(false);
   };
 
   const handleBleMeasureClick = (item) => {
     console.log("BLE mérés indítása:", item.itemName);
+    setCurrentEdit(null); // adding new by default
     setBleItem(item);
     setBlePopupOpen(true);
   };
@@ -222,50 +219,51 @@ const DoStock = () => {
 
             {visibleItems.map((subItem, subIndex) => {
               const countedData = stockCounts[subItem.itemName]?.counted || [];
+              // Long-form flag meghatározása:
+              const enrichedData = countedData.map((entry) => {
+                const unitInfo = subItem.measurementType[entry.type] || {};
+                return {
+                  ...entry,
+                  toBase: unitInfo.toBase ?? 1,
+                  longForm: unitInfo["long-form"] || false,
+                };
+              });
+
+              // re-measure callbacks (passed down)
+              const requestReMeasure = (idx) => {
+                // set edit context and open CountPopUp for that item/type
+                setCurrentEdit({ itemName: subItem.itemName, index: idx });
+                const entry = enrichedData[idx];
+                // If entry exists, open according popup
+                if (!entry) return;
+                if (entry.type && entry.type.startsWith("BLE")) {
+                  // BLE re-measure flow
+                  setBleItem(subItem);
+                  setBlePopupOpen(true);
+                } else {
+                  setCurrentItem(subItem);
+                  setCurrentType(entry.type);
+                  setPopupOpen(true);
+                }
+              };
+
+              const requestBleReMeasure = (idx) => {
+                setCurrentEdit({ itemName: subItem.itemName, index: idx });
+                setBleItem(subItem);
+                setBlePopupOpen(true);
+              };
+
               return (
                 <div className="row-in-stock" key={subIndex}>
                   <div className="item-name-and-counted">
                     <div className="item-name">{subItem.itemName}</div>
-
-                    <div className="counted-pieces">
-                      <div className="title">Számolva:</div>
-                      <div className="value">
-                        {countedData.length > 0 ? (
-                          countedData.map((entry, idx) => {
-                            const unit = entry.type;
-                            const count = entry.count;
-                            const unitInfo = subItem.measurementType[unit];
-                            const toBase = unitInfo?.toBase ?? 1;
-                            const isLongForm = unitInfo?.["long-form"] === true;
-
-                            let displayValue;
-
-                            if (isLongForm) {
-                              displayValue = `${count}*${toBase}`;
-                            } else if (
-                              ["liter", "cl", "gramm", "kg"].includes(
-                                unitInfo?.unit
-                              )
-                            ) {
-                              const value = count * toBase;
-                              displayValue =
-                                value % 1 === 0 ? value : value.toFixed(2);
-                            } else {
-                              displayValue = Math.round(count * toBase);
-                            }
-
-                            return (
-                              <span key={idx}>
-                                {idx > 0 && " + "}
-                                {displayValue}
-                              </span>
-                            );
-                          })
-                        ) : (
-                          <span>-</span>
-                        )}
-                      </div>
-                    </div>
+                    <StockRowEditor
+                      countedData={enrichedData}
+                      subItem={subItem}
+                      setStockCounts={setStockCounts}
+                      onRequestReMeasure={requestReMeasure}
+                      onRequestBleReMeasure={requestBleReMeasure}
+                    />
                   </div>
 
                   <div className="left-side-group">
@@ -299,6 +297,8 @@ const DoStock = () => {
                               <button
                                 className="add-buttons bottle"
                                 onClick={() => {
+                                  // adding new measurement -> clear edit context
+                                  setCurrentEdit(null);
                                   setCurrentItem(subItem);
                                   setCurrentType(type);
                                   setPopupOpen(true);
@@ -309,11 +309,15 @@ const DoStock = () => {
                             </div>
                           )
                         )}
+
                       {/* BLE */}
                       {subItem.isBleMeasurable && (
                         <button
                           className="add-buttons ble-button"
-                          onClick={() => handleBleMeasureClick(subItem)}
+                          onClick={() => {
+                            setCurrentEdit(null);
+                            handleBleMeasureClick(subItem);
+                          }}
                         >
                           Mérés BLE-vel
                         </button>
@@ -334,7 +338,10 @@ const DoStock = () => {
           maxCount={currentItem.measurementType[currentType].maxCount}
           step={currentItem.measurementType[currentType].step}
           onConfirm={handleConfirm}
-          onClose={() => setPopupOpen(false)}
+          onClose={() => {
+            setPopupOpen(false);
+            setCurrentEdit(null);
+          }}
           blePopupOpen={blePopupOpen}
           setBlePopupOpen={setBlePopupOpen}
           bleItem={bleItem}
@@ -344,7 +351,10 @@ const DoStock = () => {
       {blePopupOpen && bleItem && (
         <BleMeasurePopup
           item={bleItem}
-          onClose={() => setBlePopupOpen(false)}
+          onClose={() => {
+            setBlePopupOpen(false);
+            setCurrentEdit(null);
+          }}
           onConfirm={(measuredCl) => handleBleConfirm(measuredCl, bleItem)}
         />
       )}
