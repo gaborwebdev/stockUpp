@@ -13,7 +13,7 @@ export default function BleMeasurePopup({ item, onClose, onConfirm }) {
   const [netWeight, setNetWeight] = useState(null); // nettó (mért - uveg)
   const [clValue, setClValue] = useState(null); // számított cl
   const [errorMsg, setErrorMsg] = useState(null);
-  const [bytesDebug, setBytesDebug] = useState([]); //DEBUG: ide mentjük a nyers byte-okat
+  //  const [bytesDebug, setBytesDebug] = useState([]); //DEBUG: ide mentjük a nyers byte-okat
 
   // helyőrző UUID-ek (a te kódban használtak)
   const SERVICE_UUID = "0000fff0-0000-1000-8000-00805f9b34fb";
@@ -33,8 +33,6 @@ export default function BleMeasurePopup({ item, onClose, onConfirm }) {
     try {
       const buffer = event.target.value.buffer;
       const bytes = Array.from(new Uint8Array(buffer));
-      setBytesDebug(bytes); // DEBUG: mutatjuk a nyers byte-okat
-      console.log("BLE bytes:", bytes);
 
       // --- itt a te tesztkódod alapján használjuk a 18. bájtot ---
       // vedd figyelembe: ellenőrizzük, hogy létezik-e az index

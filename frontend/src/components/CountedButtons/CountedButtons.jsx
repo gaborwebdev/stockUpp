@@ -1,5 +1,5 @@
 // CountedButtons.jsx
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 export default function CountedButtons({ countedData, onDelete, onReMeasure }) {
   const pressTimerRef = useRef(null);
@@ -31,7 +31,8 @@ export default function CountedButtons({ countedData, onDelete, onReMeasure }) {
   return (
     <div style={{ display: "flex", gap: "0.3rem", flexWrap: "wrap" }}>
       {countedData.map((entry, idx) => {
-        const { type, count, convertedValue, toBase, longForm } = entry;
+        // const { type, count, convertedValue, toBase, longForm } = entry;
+        const { count, convertedValue, toBase, longForm } = entry;
 
         const displayValue = longForm
           ? `${count}*${toBase}`
