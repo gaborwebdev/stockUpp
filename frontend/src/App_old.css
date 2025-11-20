@@ -1,12 +1,15 @@
-html, body {
+html, body{
   height: 100%;
 }
 
-.App {
+.App{
   text-align: center;
+}
+
+.App {
   background-color: #282c34;
   min-height: 100vh;
-
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,13 +23,11 @@ html, body {
   width: 60%;
 }
 
-/* Scroll lock */
 .no-scroll {
   overflow: hidden !important;
   height: 100vh;
 }
 
-/* HEADER */
 .do-stock-header {
   display: flex;
   flex-direction: row;
@@ -37,18 +38,20 @@ html, body {
   border-bottom: 2px solid #ccc;
 }
 
-/* STOCK ROWS */
+
+/* stock rules */
 .row-in-stock {
   width: calc(100% - 2rem);
+
   padding: 10px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
   border: 1px solid #ccc;
 }
-
-.item-name-and-counted {
+.item-name-and-counted{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -75,16 +78,19 @@ html, body {
   font-weight: bold;
   font-size: 1.2rem;
 }
-
 .counted-pieces .title {
+  justify-self: flex-start;
   font-size: 1rem;
   color: #eeb3b3;
 }
+
 
 .left-side-group {
   display: flex;
   flex-direction: row;
   gap: 20px;
+
+  /* border: 1px solid blue; */
 }
 
 .total-in-stock {
@@ -92,13 +98,11 @@ html, body {
   align-items: flex-end;
   gap: 5px;
 }
-
 .total-title {
   font-size: 1rem;
   font-style: italic;
   color: #a3d8f4;
 }
-
 .total-value {
   font-size: 1.5rem;
   font-weight: bold;
@@ -112,13 +116,14 @@ html, body {
 
 .bottle,
 .do-stock-button {
+
   font-weight: bold;
+
   background-color: #4daec9;
   border: none;
   border-radius: 5px;
   color: white;
 }
-
 .case,
 .edit-items-button {
   background-color: #21a1f1;
@@ -130,15 +135,17 @@ html, body {
 /* PopUp */
 .popup-overlay {
   position: fixed;
+
+  /* height: 90%; */
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
+
   overflow: hidden;
 }
-
 .popup-inner {
   display: flex;
   flex-direction: column;
@@ -149,12 +156,13 @@ html, body {
   border-radius: 1rem;
   width: 90%;
   max-width: 600px;
+  /* min-height: 70%; */
   max-height: 90vh;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   text-align: center;
+  
 }
-
 .number-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -169,20 +177,17 @@ html, body {
   color: white;
   cursor: pointer;
 }
-
 .selected {
   background-color: #3af7ed;
   color: black;
   font-weight: bold;
 }
-
 .popup-buttons {
   width: 100%;
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
-
 .confirm-button,
 .cancel-button {
   width: 100%;
@@ -193,12 +198,17 @@ html, body {
   padding: 1rem 1rem;
   cursor: pointer;
 }
-
 .cancel-button {
   background-color: #f44336;
 }
+ 
 
-/* Filters */
+.popup-close {
+  margin-top: 1rem;
+}
+
+
+/* Filter a csoportokhoz */
 .group-filters {
   display: flex;
   justify-content: center;
@@ -226,7 +236,11 @@ html, body {
   background-color: #f44336;
 }
 
-/* BLE Popup */
+
+
+
+/* BLE PopUp Overlay!! */
+/* BLE PopUp (ugyanolyan stílus, mint a CountPopUp, extra státuszszínekkel) */
 .popup-overlay-ble {
   position: fixed;
   inset: 0;
@@ -256,102 +270,70 @@ html, body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-/* === 💡 RESPONSIVE BREAKPOINTS === */
-
-/* 1️⃣ Extra small mobile (max 400px) */
-@media (max-width: 400px) {
-  .App .do-stock,
-  .App .App-header {
-    width: 95%;
-  }
-
-  .row-in-stock {
-    flex-direction: column;
-    gap: 10px;
-    text-align: left;
-  }
-
-  .number-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  button {
-    font-size: 0.8rem;
-    padding: 0.5rem;
-  }
-
-  .popup-inner {
-    font-size: 0.9rem;
-  }
+.popup-content-ble h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
 }
 
-/* 2️⃣ Average mobile (400px–600px) */
-@media (min-width: 400px) and (max-width: 600px) {
-  .App .do-stock,
-  .App .App-header {
-    width: 90%;
-  }
-
-  .row-in-stock {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .number-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.popup-content-ble p {
+  margin-bottom: 1rem;
+  color: #eeb3b3;
+  font-size: 1rem;
 }
 
-/* 3️⃣ Tablet (600px–900px) */
-@media (min-width: 600px) and (max-width: 900px) {
-  .App .do-stock,
-  .App .App-header {
-    width: 80%;
-  }
-
-  .row-in-stock {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .number-grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
-  .add-buttons-group button {
-    font-size: 0.9rem;
-  }
+.popup-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1.5rem;
 }
 
-/* 4️⃣ Small PC (900px–1200px) */
-@media (min-width: 900px) and (max-width: 1200px) {
-  .App .do-stock,
-  .App .App-header {
-    width: 70%;
-  }
-
-  .row-in-stock {
-    gap: 15px;
-  }
-
-  .number-grid {
-    grid-template-columns: repeat(6, 1fr);
-  }
+/* Alap gombstílus */
+.popup-content-ble button {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-/* 5️⃣ Large PC / Wide screens (min 1200px) */
-@media (min-width: 1200px) {
-  .App .do-stock,
-  .App .App-header {
-    width: 60%;
-  }
+/* Gomb státusz színek */
+.popup-content-ble button.connect-btn {
+  background-color: #2196f3;
+}
+.popup-content-ble button.connect-btn:hover {
+  background-color: #42a5f5;
+  transform: scale(1.05);
+}
 
-  .App {
-    font-size: calc(12px + 2vmin);
-  }
+.popup-content-ble button.measure-btn {
+  background-color: #4caf50;
+}
+.popup-content-ble button.measure-btn:hover {
+  background-color: #66bb6a;
+  transform: scale(1.05);
+}
 
-  .row-in-stock {
-    max-width: 1000px;
-  }
+.popup-content-ble button.close-btn,
+.popup-content-ble button.not-available-btn {
+  background-color: #f44336;
+}
+.popup-content-ble button.close-btn:hover,
+.popup-content-ble button.not-available-btn:hover {
+  background-color: #e57373;
+  transform: scale(1.05);
+}
+
+/* Extra szöveg státuszhoz */
+.popup-content-ble .status {
+  font-style: italic;
+  color: #ffd166;
+  margin-bottom: 0.5rem;
 }

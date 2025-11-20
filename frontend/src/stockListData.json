@@ -751,7 +751,7 @@
             "maxCount": 6,
             "step": 1,
             "unit": "bottle",
-            "toBase": 1,
+            "toBase": 0.7,
             "long-form": true
           }
         }
