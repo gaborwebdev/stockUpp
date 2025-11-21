@@ -5,7 +5,7 @@ import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import stockData from "../../data/stockListData.json";
 import BleMeasurePopup from "../../components/modals/BleMeasurePopUp/BleMeasurePopUp.jsx";
-import BleDebugPopup from "../../components/debugPopup/debugPopup";
+import DebugPopup from "../../components/modals/DebugPopUp/DebugPopUp.jsx";
 import StockRowEditor from "../../components/StockRowEditor/StockRowEditor.jsx";
 
 const DoStock = () => {
@@ -359,7 +359,7 @@ const DoStock = () => {
         />
       )}
       {/* BLE Debug PopUp */}
-      {debugOpen && <BleDebugPopup onClose={() => setDebugOpen(false)} />}
+      {debugOpen && <DebugPopup onClose={() => setDebugOpen(false)} />}
     </div>
   );
 };
