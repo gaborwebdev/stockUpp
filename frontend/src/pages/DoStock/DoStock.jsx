@@ -1,6 +1,6 @@
 // DoStock.jsx
 import "../../App.css";
-import CountPopUp from "../../components/CountPopUp/CountPopUp";
+import CountPopUp from "../../components/modals/CountPopUp/CountPopUp.jsx";
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import stockData from "../../data/stockListData.json";
