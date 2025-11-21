@@ -4,7 +4,7 @@ import CountPopUp from "../../components/modals/CountPopUp/CountPopUp.jsx";
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import stockData from "../../data/stockListData.json";
-import BleMeasurePopup from "../../components/BLEMeasurePopUp/BleMeasurePopup";
+import BleMeasurePopup from "../../components/modals/BleMeasurePopUp/BleMeasurePopUp.jsx";
 import BleDebugPopup from "../../components/debugPopup/debugPopup";
 import StockRowEditor from "../../components/StockRowEditor/StockRowEditor.jsx";
 
