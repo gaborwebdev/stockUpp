@@ -3,7 +3,7 @@ import "../../App.css";
 import CountPopUp from "../../components/CountPopUp/CountPopUp";
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import stockData from "../../stockListData.json";
+import stockData from "../../data/stockListData.json";
 import BleMeasurePopup from "../../components/BLEMeasurePopUp/BleMeasurePopup";
 import BleDebugPopup from "../../components/debugPopup/debugPopup";
 import StockRowEditor from "../../components/StockRowEditor/StockRowEditor.jsx";
