@@ -1,8 +1,13 @@
 // DoStock.jsx
+
+// css import
 import "../../App.css";
+// react imports
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import stockData from "../../data/stockListData.json";
+// data import
+//import stockData from "../../data/stockListData.json";
+// components imports
 import CountPopUp from "../../components/modals/CountPopUp/CountPopUp.jsx";
 import BleMeasurePopup from "../../components/modals/BleMeasurePopUp/BleMeasurePopUp.jsx";
 import DebugPopup from "../../components/modals/DebugPopUp/DebugPopUp.jsx";
@@ -12,19 +17,24 @@ import StockTable from "../../components/StockTable/StockTable.jsx";
 
 // hooks import
 import useStockData from "../../hooks/useStockData.js";
+
 import useModals from "../../hooks/useModals.js";
 import useBleMeasure from "../../hooks/useBleMeasure.js";
 
 const DoStock = () => {
-  const [stockCounts, setStockCounts] = useState(() => {
-    const initial = {};
-    stockData.forEach((cat) => {
-      cat.items.forEach((item) => {
-        initial[item.itemName] = {};
-      });
-    });
-    return initial;
-  });
+  const {
+  stockCounts,
+  setStockCounts,
+  selectedGroups,
+  setSelectedGroups,
+  allGroups,
+  filteredData,
+  currentEdit,
+  setCurrentEdit,
+  handleConfirm
+  } = useStockData();
+
+
 
   const [popupOpen, setPopupOpen] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
@@ -34,78 +44,12 @@ const DoStock = () => {
   const [blePopupOpen, setBlePopupOpen] = useState(false);
   const [bleItem, setBleItem] = useState(null);
 
-  // Current edit context: { itemName, index } vagy null
-  const [currentEdit, setCurrentEdit] = useState(null);
-
-  // 🆕 Italcsoportok összegyűjtése
-  const allGroups = [
-    ...new Set(stockData.flatMap((cat) => cat.items.map((i) => i.itemGroup))),
-  ];
-  const [selectedGroups, setSelectedGroups] = useState([]);
-
   // Debug popup state
   const [debugOpen, setDebugOpen] = useState(false);
-
-  // 🧠 Szűrt adatok — ha nincs kiválasztva semmi, akkor mindent mutatunk
-  const filteredData = stockData.map((cat) => ({
-    ...cat,
-    items:
-      selectedGroups.length === 0
-        ? cat.items
-        : cat.items.filter((i) => selectedGroups.includes(i.itemGroup)),
-  }));
 
   useEffect(() => {
     document.body.style.overflow = popupOpen ? "hidden" : "auto";
   }, [popupOpen]);
-
-  // HELP: replace-or-append on confirm
-  const handleConfirm = (count) => {
-    if (!currentItem || !currentType) return;
-
-    const itemName = currentItem.itemName;
-    const baseUnit = currentItem.baseUnit || "unit";
-    const typeConfig = currentItem.measurementType[currentType] || {};
-
-    const convertedValue = count * (typeConfig.toBase ?? 1);
-
-    setStockCounts((prev) => {
-      const prevItem = prev[itemName] || {};
-      const prevCounted = Array.isArray(prevItem.counted)
-        ? [...prevItem.counted]
-        : [];
-
-      if (
-        currentEdit &&
-        currentEdit.itemName === itemName &&
-        Number.isFinite(currentEdit.index)
-      ) {
-        // Replace existing entry at index
-        const idx = currentEdit.index;
-        prevCounted[idx] = { type: currentType, count, convertedValue };
-      } else {
-        // Append as new
-        prevCounted.push({ type: currentType, count, convertedValue });
-      }
-
-      const newTotal = parseFloat(
-        prevCounted.reduce((s, e) => s + (e.convertedValue || 0), 0).toFixed(6)
-      );
-
-      return {
-        ...prev,
-        [itemName]: {
-          baseUnit: prevItem.baseUnit || baseUnit,
-          total: newTotal,
-          counted: prevCounted,
-        },
-      };
-    });
-
-    // reset edit context and close popup
-    setCurrentEdit(null);
-    setPopupOpen(false);
-  };
 
   // BLE confirm also supports replace
   const handleBleConfirm = (measuredCl, item) => {
