@@ -1,12 +1,19 @@
 // DoStock.jsx
 import "../../App.css";
-import CountPopUp from "../../components/modals/CountPopUp/CountPopUp.jsx";
 import { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import stockData from "../../data/stockListData.json";
+import CountPopUp from "../../components/modals/CountPopUp/CountPopUp.jsx";
 import BleMeasurePopup from "../../components/modals/BleMeasurePopUp/BleMeasurePopUp.jsx";
 import DebugPopup from "../../components/modals/DebugPopUp/DebugPopUp.jsx";
 import StockRowEditor from "../../components/StockRowEditor/StockRowEditor.jsx";
+
+import StockTable from "../../components/StockTable/StockTable.jsx";
+
+// hooks import
+import useStockData from "../../hooks/useStockData.js";
+import useModals from "../../hooks/useModals.js";
+import useBleMeasure from "../../hooks/useBleMeasure.js";
 
 const DoStock = () => {
   const [stockCounts, setStockCounts] = useState(() => {
