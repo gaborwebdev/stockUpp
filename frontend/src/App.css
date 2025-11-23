@@ -266,7 +266,7 @@ html, body {
   }
 
   .row-in-stock {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     text-align: left;
   }
@@ -293,7 +293,7 @@ html, body {
   }
 
   .row-in-stock {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
