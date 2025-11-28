@@ -268,7 +268,7 @@ html, body {
   .row-in-stock {
     flex-direction: row;
     gap: 10px;
-    text-align: left;
+    /* text-align: left; */
   }
 
   .number-grid {
