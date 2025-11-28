@@ -11,6 +11,7 @@ import StockRowEditor from "../../components/StockRowEditor/StockRowEditor.jsx";
 
 import useStockData from "../../hooks/useStockData.js";
 import useModals from "../../hooks/useModals.js";
+import useBleMeasure from "../../hooks/useBleMeasure.js";
 
 const DoStock = () => {
   // data & edit context
@@ -47,6 +48,9 @@ const DoStock = () => {
   useEffect(() => {
     document.body.style.overflow = popupOpen || blePopupOpen ? "hidden" : "auto";
   }, [popupOpen, blePopupOpen]);
+
+  // BLE hook
+  const ble = useBleMeasure();
 
   // request re-measure for counted entries
   const requestReMeasure = (subItem, idx, entry) => {
@@ -216,7 +220,7 @@ const DoStock = () => {
       )}
 
       {/* BLE Popup */}
-      {blePopupOpen && currentItem && (
+      {blePopupOpen && currentItem && ble && (
         <BleMeasurePopup
           item={currentItem}
           onClose={() => {
@@ -232,6 +236,7 @@ const DoStock = () => {
             setCurrentItem(null);
             setCurrentType(null);
           }}
+          ble={ble}
         />
       )}
 
