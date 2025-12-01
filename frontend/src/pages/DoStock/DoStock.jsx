@@ -44,13 +44,14 @@ const DoStock = () => {
     setDebugPopupOpen,
   } = useModals();
 
-  // prevent scroll when popups are open
-  useEffect(() => {
-    document.body.style.overflow = popupOpen || blePopupOpen ? "hidden" : "auto";
-  }, [popupOpen, blePopupOpen]);
-
   // BLE hook
   const ble = useBleMeasure();
+
+  // prevent scroll when popups are open
+  useEffect(() => {
+    document.body.style.overflow =
+      popupOpen || blePopupOpen ? "hidden" : "auto";
+  }, [popupOpen, blePopupOpen]);
 
   // request re-measure for counted entries
   const requestReMeasure = (subItem, idx, entry) => {
@@ -91,10 +92,26 @@ const DoStock = () => {
     <div className="App do-stock">
       <header className="add-buttons-group do-stock-header">
         <p>New stock</p>
+
         <Link to="/">
           <button className="add-buttons case">Go Back</button>
         </Link>
-        <button className="debug-button" onClick={() => setDebugPopupOpen(true)}>
+
+        {/* BLE Connect / Disconnect buttons */}
+        {ble.status === "connected" ? (
+          <button className="debug-button" onClick={ble.disconnect}>
+            🔌 Disconnect BLE
+          </button>
+        ) : (
+          <button className="debug-button" onClick={ble.connect}>
+            🔗 Connect BLE
+          </button>
+        )}
+
+        <button
+          className="debug-button"
+          onClick={() => setDebugPopupOpen(true)}
+        >
           BLE Debug
         </button>
       </header>
@@ -107,7 +124,9 @@ const DoStock = () => {
             className={selectedGroups.includes(group) ? "active" : ""}
             onClick={() =>
               setSelectedGroups((prev) =>
-                prev.includes(group) ? prev.filter((g) => g !== group) : [...prev, group]
+                prev.includes(group)
+                  ? prev.filter((g) => g !== group)
+                  : [...prev, group]
               )
             }
           >
@@ -142,6 +161,7 @@ const DoStock = () => {
                 <div className="row-in-stock" key={subIndex}>
                   <div className="item-name-and-counted">
                     <div className="item-name">{subItem.itemName}</div>
+
                     <StockRowEditor
                       countedData={enrichedData}
                       subItem={subItem}
@@ -149,7 +169,9 @@ const DoStock = () => {
                       onRequestReMeasure={(idx) =>
                         requestReMeasure(subItem, idx, enrichedData[idx])
                       }
-                      onRequestBleReMeasure={(idx) => requestBleReMeasure(subItem, idx)}
+                      onRequestBleReMeasure={(idx) =>
+                        requestBleReMeasure(subItem, idx)
+                      }
                     />
                   </div>
 
@@ -159,12 +181,15 @@ const DoStock = () => {
                       <div className="total-value">
                         {(() => {
                           const itemData = stockCounts[subItem.itemName];
-                          const total = itemData?.total ?? subItem.itemOnStock ?? 0;
+                          const total =
+                            itemData?.total ?? subItem.itemOnStock ?? 0;
                           const isDecimalNeeded =
                             subItem.itemGroup === "pálinkák" ||
                             subItem.itemGroup === "rövid italok" ||
                             (subItem.baseUnit === "liter" && total % 1 !== 0);
-                          return isDecimalNeeded ? total.toFixed(2) : Math.round(total);
+                          return isDecimalNeeded
+                            ? total.toFixed(2)
+                            : Math.round(total);
                         })()}
                       </div>
                     </div>
@@ -175,7 +200,9 @@ const DoStock = () => {
                           <div key={type}>
                             <button
                               className="add-buttons bottle"
-                              onClick={() => handleAddMeasurement(subItem, type)}
+                              onClick={() =>
+                                handleAddMeasurement(subItem, type)
+                              }
                             >
                               {type}
                             </button>
@@ -220,9 +247,10 @@ const DoStock = () => {
       )}
 
       {/* BLE Popup */}
-      {blePopupOpen && currentItem && ble && (
+      {blePopupOpen && currentItem && (
         <BleMeasurePopup
           item={currentItem}
+          ble={ble} // << FULL BLE STATE + tömeg
           onClose={() => {
             closeBlePopup();
             setCurrentEdit(null);
@@ -236,12 +264,13 @@ const DoStock = () => {
             setCurrentItem(null);
             setCurrentType(null);
           }}
-          ble={ble}
         />
       )}
 
       {/* Debug Popup */}
-      {debugPopupOpen && <DebugPopup onClose={() => setDebugPopupOpen(false)} />}
+      {debugPopupOpen && (
+        <DebugPopup onClose={() => setDebugPopupOpen(false)} />
+      )}
     </div>
   );
 };
