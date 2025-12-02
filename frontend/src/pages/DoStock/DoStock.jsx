@@ -12,6 +12,7 @@ import StockRowEditor from "../../components/StockRowEditor/StockRowEditor.jsx";
 import useStockData from "../../hooks/useStockData.js";
 import useModals from "../../hooks/useModals.js";
 import useBleMeasure from "../../hooks/useBleMeasure.js";
+import BottomNavBar from "../../components/BottomNavBar/BottomNavBar.jsx";
 
 const DoStock = () => {
   // data & edit context
@@ -271,6 +272,8 @@ const DoStock = () => {
       {debugPopupOpen && (
         <DebugPopup onClose={() => setDebugPopupOpen(false)} />
       )}
+
+      <BottomNavBar />
     </div>
   );
 };

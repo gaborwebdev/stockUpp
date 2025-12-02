@@ -1,0 +1,51 @@
+.bottom-navbar-wrapper {
+  position: fixed;
+  bottom: 16px; /* nem 0! */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 480px;
+  height: 64px;
+  background: var(--color-text);
+  border-radius: 22px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+}
+
+.nav-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: var(--color-primary);
+  font-size: 26px; /* ikon méret */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-item:active {
+  transform: scale(1.2) translateY(-3px);
+}
+
+.nav-item.active {
+  color: var(--color-text);
+  transform: scale(1.15) translateY(-2px);
+}
+
+.active-bg {
+  position: absolute;
+  width: var(--item-width);
+  height: 50px;
+  background: #707070;
+  background: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  bottom: 7px; /* feljebb, hogy bubble legyen */
+  left: 0;
+  transition: transform 0.35s ease;
+  transform: translateX(0px);
+  z-index: -1; /* ikonok alatt legyen */
+}

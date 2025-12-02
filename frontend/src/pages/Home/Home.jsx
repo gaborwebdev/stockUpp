@@ -2,6 +2,7 @@ import "../../App.css";
 // import stockData from "./items.json";
 
 import { Link } from "react-router-dom";
+import BottomNavBar from "../../components/BottomNavBar/BottomNavBar";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
           </Link>
         </div>
       </header>
+      <BottomNavBar />
     </div>
   );
 };
