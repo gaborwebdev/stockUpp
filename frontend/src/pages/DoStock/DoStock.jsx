@@ -1,5 +1,4 @@
 // src/pages/DoStock/DoStock.jsx
-
 import "../../App.css";
 import { Fragment, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -11,7 +10,7 @@ import StockRowEditor from "../../components/StockRowEditor/StockRowEditor.jsx";
 
 import useStockData from "../../hooks/useStockData.js";
 import useModals from "../../hooks/useModals.js";
-import useBleMeasure from "../../hooks/useBleMeasure.js";
+import { useBle } from "../../context/BleContext";
 import BottomNavBar from "../../components/BottomNavBar/BottomNavBar.jsx";
 
 const DoStock = () => {
@@ -45,16 +44,15 @@ const DoStock = () => {
     setDebugPopupOpen,
   } = useModals();
 
-  // BLE hook
-  const ble = useBleMeasure();
+  // BLE context (csak a popupokhoz)
+  const ble = useBle();
 
-  // prevent scroll when popups are open
   useEffect(() => {
     document.body.style.overflow =
       popupOpen || blePopupOpen ? "hidden" : "auto";
   }, [popupOpen, blePopupOpen]);
 
-  // request re-measure for counted entries
+  // request re-measure
   const requestReMeasure = (subItem, idx, entry) => {
     setCurrentEdit({ itemName: subItem.itemName, index: idx });
     if (entry?.type?.startsWith("BLE")) {
@@ -93,31 +91,12 @@ const DoStock = () => {
     <div className="App do-stock">
       <header className="add-buttons-group do-stock-header">
         <p>New stock</p>
-
         <Link to="/">
           <button className="add-buttons case">Go Back</button>
         </Link>
-
-        {/* BLE Connect / Disconnect buttons */}
-        {ble.status === "connected" ? (
-          <button className="debug-button" onClick={ble.disconnect}>
-            🔌 Disconnect BLE
-          </button>
-        ) : (
-          <button className="debug-button" onClick={ble.connect}>
-            🔗 Connect BLE
-          </button>
-        )}
-
-        <button
-          className="debug-button"
-          onClick={() => setDebugPopupOpen(true)}
-        >
-          BLE Debug
-        </button>
+        {/* A BLE Connect/Disconnect és Debug gombok most a BLE oldalon vannak */}
       </header>
 
-      {/* Group filters */}
       <div className="group-filters">
         {allGroups.map((group) => (
           <button
@@ -139,7 +118,6 @@ const DoStock = () => {
         </button>
       </div>
 
-      {/* Stock list */}
       {filteredData.map((cat, catIndex) => {
         const visibleItems = cat.items;
         if (!visibleItems || visibleItems.length === 0) return null;
@@ -162,7 +140,6 @@ const DoStock = () => {
                 <div className="row-in-stock" key={subIndex}>
                   <div className="item-name-and-counted">
                     <div className="item-name">{subItem.itemName}</div>
-
                     <StockRowEditor
                       countedData={enrichedData}
                       subItem={subItem}
@@ -227,7 +204,6 @@ const DoStock = () => {
         );
       })}
 
-      {/* CountPopUp */}
       {popupOpen && currentItem && (
         <CountPopUp
           itemName={currentItem.itemName}
@@ -247,11 +223,10 @@ const DoStock = () => {
         />
       )}
 
-      {/* BLE Popup */}
       {blePopupOpen && currentItem && (
         <BleMeasurePopup
           item={currentItem}
-          ble={ble} // << FULL BLE STATE + tömeg
+          ble={ble} // a contextből jön
           onClose={() => {
             closeBlePopup();
             setCurrentEdit(null);
@@ -268,7 +243,6 @@ const DoStock = () => {
         />
       )}
 
-      {/* Debug Popup */}
       {debugPopupOpen && (
         <DebugPopup onClose={() => setDebugPopupOpen(false)} />
       )}

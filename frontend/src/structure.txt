@@ -1,0 +1,48 @@
+.
+├── App.css
+├── App.js
+├── App_old.css
+├── App.test.js
+├── components
+│   ├── BottomNavBar
+│   │   ├── BottomNavBar.jsx
+│   │   └── style.css
+│   ├── CountedButtons
+│   │   └── CountedButtons.jsx
+│   ├── modals
+│   │   ├── BleMeasurePopUp
+│   │   ├── CountPopUp
+│   │   └── DebugPopUp
+│   ├── StockRowEditor
+│   │   └── StockRowEditor.jsx
+│   └── StockTable
+│       └── StockTable.jsx
+├── data
+│   ├── items.json
+│   ├── stockListData.json
+│   ├── stockListData_OLD.json
+│   └── stockSample.json
+├── hooks
+│   ├── useBleMeasure.js
+│   ├── useModals.js
+│   └── useStockData.js
+├── ideas.txt
+├── index.css
+├── index.js
+├── pages
+│   ├── Ble
+│   │   └── Ble.jsx
+│   ├── DoStock
+│   │   └── DoStock.jsx
+│   ├── Home
+│   │   └── Home.jsx
+│   ├── Search
+│   │   └── Search.jsx
+│   └── Settings
+│       └── Settings.jsx
+├── reportWebVitals.js
+├── setupTests.js
+├── structure.txt
+└── variables.css
+
+17 directories, 28 files
