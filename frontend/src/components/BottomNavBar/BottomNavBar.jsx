@@ -11,6 +11,8 @@ import {
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
+import { useBle } from "../../context/BleContext";
+
 const BottomNavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,13 +22,25 @@ const BottomNavBar = () => {
   const [itemWidth, setItemWidth] = useState(0);
   const navRef = useRef(null);
 
+  const { status } = useBle();
+  const bleColor =
+    status === "connected"
+      ? "#4caf50" // zöld
+      : status === "connecting"
+      ? "#ff9800" // narancs
+      : "#f44336"; // piros (disconnected / error)
+
   /** NAV ITEMS (PATH + ICON) */
   const items = [
     { icon: <MdSettings />, label: "Settings", path: "/settings" },
     { icon: <MdSearch />, label: "Search", path: "/search" },
     { icon: <MdHome />, label: "Home", path: "/" },
     { icon: <MdOutlineFolderOpen />, label: "New Stock", path: "/do-stock" },
-    { icon: <MdBluetooth />, label: "Bluetooth", path: "/ble" },
+    {
+      icon: <MdBluetooth style={{ color: bleColor }} />,
+      label: "Bluetooth",
+      path: "/ble",
+    },
   ];
 
   /** FIND ACTIVE INDEX BASED ON CURRENT ROUTE */
