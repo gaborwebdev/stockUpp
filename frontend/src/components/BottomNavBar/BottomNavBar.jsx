@@ -23,9 +23,9 @@ const BottomNavBar = () => {
   /** NAV ITEMS (PATH + ICON) */
   const items = [
     { icon: <MdSettings />, label: "Settings", path: "/settings" },
-    { icon: <MdOutlineFolderOpen />, label: "Search", path: "/search" },
+    { icon: <MdSearch />, label: "Search", path: "/search" },
     { icon: <MdHome />, label: "Home", path: "/" },
-    { icon: <MdAddCircle />, label: "New Stock", path: "/do-stock" },
+    { icon: <MdOutlineFolderOpen />, label: "New Stock", path: "/do-stock" },
     { icon: <MdBluetooth />, label: "Bluetooth", path: "/ble" },
   ];
 
