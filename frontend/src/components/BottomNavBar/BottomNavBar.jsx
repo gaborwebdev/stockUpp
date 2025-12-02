@@ -8,13 +8,15 @@ import {
   MdBluetooth,
 } from "react-icons/md";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const BottomNavBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const [ready, setReady] = useState(false);
+  const [transitionEnabled, setTransitionEnabled] = useState(false);
   const [itemWidth, setItemWidth] = useState(0);
   const navRef = useRef(null);
 
@@ -24,30 +26,50 @@ const BottomNavBar = () => {
     { icon: <MdOutlineFolderOpen />, label: "Search", path: "/search" },
     { icon: <MdHome />, label: "Home", path: "/" },
     { icon: <MdAddCircle />, label: "New Stock", path: "/do-stock" },
-    { icon: <MdBluetooth />, label: "Bluetooth", path: "/ble-test" },
+    { icon: <MdBluetooth />, label: "Bluetooth", path: "/ble" },
   ];
 
   /** FIND ACTIVE INDEX BASED ON CURRENT ROUTE */
-  const activeIndex = items.findIndex((i) => i.path === location.pathname);
+  let activeIndex = items.findIndex((i) => i.path === location.pathname);
+  if (activeIndex === -1) activeIndex = 0;
 
   /** ITEM WIDTH */
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (navRef.current) {
-      const width = navRef.current.offsetWidth;
-      setItemWidth(width / items.length);
+      requestAnimationFrame(() => {
+        const width = navRef.current.offsetWidth;
+        setItemWidth(width / items.length);
+      });
     }
   }, []);
+
+  useEffect(() => {
+    if (itemWidth > 0) {
+      requestAnimationFrame(() => setReady(true));
+    }
+  }, [itemWidth]);
+
+  /** ANIMATION CORRECTION*/
+  useEffect(() => {
+    if (itemWidth > 0) {
+      const t = setTimeout(() => setTransitionEnabled(true), 50);
+      return () => clearTimeout(t);
+    }
+  }, [itemWidth]);
 
   const highlightStyle = {
     width: "50px",
     height: "50px",
     transform: `translateX(${activeIndex * itemWidth + itemWidth / 2 - 25}px)`,
-    transition: "transform 0.3s ease",
+    transition: transitionEnabled ? "transform 0.35s ease" : "none",
   };
 
   return (
     <div className="bottom-navbar-wrapper" ref={navRef}>
-      <div className="active-bg" style={highlightStyle} />
+      <div
+        className={`active-bg ${ready ? "" : "hidden"}`}
+        style={highlightStyle}
+      />
 
       {items.map((item, index) => (
         <div

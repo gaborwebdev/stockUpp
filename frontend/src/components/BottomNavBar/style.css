@@ -35,9 +35,13 @@
   transform: scale(1.15) translateY(-2px);
 }
 
+.active-bg.hidden {
+  opacity: 0;
+}
+
 .active-bg {
   position: absolute;
-  width: var(--item-width);
+  /* width: var(--item-width); */
   height: 50px;
   background: #707070;
   background: var(--color-primary);
@@ -45,7 +49,11 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   bottom: 7px; /* feljebb, hogy bubble legyen */
   left: 0;
-  transition: transform 0.35s ease;
-  transform: translateX(0px);
+  /* transition: transform 0.35s ease; */
+  /* transform: translateX(0px); */
   z-index: -1; /* ikonok alatt legyen */
+
+  /* GPU */
+  will-change: transform;
+  transform: translateZ(0);
 }

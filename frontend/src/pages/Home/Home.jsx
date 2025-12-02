@@ -7,6 +7,7 @@ import BottomNavBar from "../../components/BottomNavBar/BottomNavBar";
 const Home = () => {
   return (
     <div className="App">
+      <BottomNavBar />
       <header className="App-header">
         <h1>Stock Management App v0.1v2</h1>
         <div className="add-buttons-group">
