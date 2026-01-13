@@ -6,6 +6,8 @@ import {
   MdOutlineFolderOpen,
   MdSettings,
   MdBluetooth,
+  MdLocalBar,
+  MdOutlineSportsBar,
 } from "react-icons/md";
 import { RiListSettingsLine } from "react-icons/ri";
 import { PiListMagnifyingGlassBold } from "react-icons/pi";
@@ -37,7 +39,11 @@ const BottomNavBar = () => {
     { icon: <MdSettings />, label: "Settings", path: "/settings" },
     { icon: <PiListMagnifyingGlassBold />, label: "Search", path: "/search" },
     { icon: <MdHome />, label: "Home", path: "/" },
-    { icon: <MdOutlineFolderOpen />, label: "New Stock", path: "/do-stock" },
+    {
+      icon: <MdLocalBar />,
+      label: "New Stock",
+      path: "/do-stock",
+    },
     {
       icon: <MdBluetooth style={{ color: bleColor }} />,
       label: "Bluetooth",

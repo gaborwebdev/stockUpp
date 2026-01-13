@@ -6,9 +6,9 @@
   width: 90%;
   max-width: 480px;
   height: 64px;
-  background: var(--color-background-main);
+  background: #043e74;
   border-radius: 22px;
-  box-shadow: 0 8px 20px rgba(214, 223, 233, 0.3);
+  /* box-shadow: 0 1px 5px rgba(45, 186, 221, 0.4); */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -31,7 +31,7 @@
 }
 
 .nav-item.active {
-  color: var(--color-text);
+  color: #043e74;
   transform: scale(1.15) translateY(-2px);
 }
 
@@ -44,9 +44,9 @@
   /* width: var(--item-width); */
   height: 50px;
   background: #707070;
-  background: var(--color-primary);
+  background: rgb(111, 214, 240);
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px rgba(45, 186, 221, 0.4);
   bottom: 7px; /* feljebb, hogy bubble legyen */
   left: 0;
   /* transition: transform 0.35s ease; */
