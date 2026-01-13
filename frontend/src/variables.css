@@ -5,4 +5,20 @@
   --color-secondary: #6c8e9c;
   --color-text: #d4dedb;
   --color-text-dark: #b2a09f;
+
+  --custom-background: #121212;
+  --custom-card-or-surface: #1e1e1e;
+
+  --custom-primary: #4aa8f0;
+  --custom-primary-dark: #1d6fa5;
+  --custom-secondary: #67c07f;
+  --custom-secondary-dark: #3c8853;
+
+  --custom-text-main: #ffffff;
+  --custom-text-secondary: #cfcfcf;
+  --custom-text-tertiary: #9a9a9a;
+
+  --custom-navbar-bgc: #1a1a1a;
+  --custom-navbar-active: #4aa8f0;
+  --custom-navbar-inactive: #6e6e6e;
 }

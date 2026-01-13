@@ -6,9 +6,9 @@
   width: 90%;
   max-width: 480px;
   height: 64px;
-  background: var(--color-text);
+  background: var(--color-background-main);
   border-radius: 22px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(214, 223, 233, 0.3);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: var(--color-primary);
+  color: var(--color-text);
   font-size: 26px; /* ikon méret */
   transition: color 0.3s, transform 0.3s;
 }

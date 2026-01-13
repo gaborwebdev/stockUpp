@@ -7,6 +7,8 @@ import {
   MdSettings,
   MdBluetooth,
 } from "react-icons/md";
+import { RiListSettingsLine } from "react-icons/ri";
+import { PiListMagnifyingGlassBold } from "react-icons/pi";
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -33,7 +35,7 @@ const BottomNavBar = () => {
   /** NAV ITEMS (PATH + ICON) */
   const items = [
     { icon: <MdSettings />, label: "Settings", path: "/settings" },
-    { icon: <MdSearch />, label: "Search", path: "/search" },
+    { icon: <PiListMagnifyingGlassBold />, label: "Search", path: "/search" },
     { icon: <MdHome />, label: "Home", path: "/" },
     { icon: <MdOutlineFolderOpen />, label: "New Stock", path: "/do-stock" },
     {

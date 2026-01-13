@@ -1,0 +1,21 @@
+Background	#121212
+
+Surface / Card	#1E1E1E
+Border	#2A2A2A
+
+Primary	#4AA8F0
+Secondary	#67C07F
+
+Primary Dark	#1D6FA5
+Secondary Dark	#3C8853
+
+
+Text Main	#FFFFFF
+Text Secondary	#CFCFCF
+Text Tertiary	#9A9A9A
+
+Error	#FF6B6B
+
+Navbar BG	#1A1A1A
+Navbar Inactive	#6E6E6E
+Navbar Active	#4AA8F0

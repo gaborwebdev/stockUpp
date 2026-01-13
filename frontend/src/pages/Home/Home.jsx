@@ -9,17 +9,72 @@ const Home = () => {
     <div className="App">
       <BottomNavBar />
       <header className="App-header">
-        <h1>Stock Management App v0.1v2</h1>
+        <h1>StandikApp</h1>
         <div className="add-buttons-group">
-          <Link to="/do-stock">
-            <button className="do-stock-button">Do Stock</button>
-          </Link>
           <Link to="/edit-items">
             <button className="edit-items-button">Edit Items</button>
           </Link>
-          <Link to="/ble-test">
-            <button className="edit-items-button">BLE Test</button>
-          </Link>
+        </div>
+        <div className="color-test">
+          <div className="row">
+            <div className="color one">
+              custom-bgc
+              <div className="text colors">
+                <p className="text-primary">Text: Primary</p>
+                <p className="text-secondary">Text: Secondary</p>
+                <p className="text-tertiary">Text: Tertiary</p>
+              </div>
+            </div>
+            <div className="color primary">
+              color Primary
+              <div className="text colors">
+                <p className="text-primary">Text: Primary</p>
+                <p className="text-secondary">Text: Secondary</p>
+                <p className="text-tertiary">Text: Tertiary</p>
+              </div>
+            </div>
+            <div className="color primary-dark">
+              color Primary Dark
+              <div className="text colors">
+                <p className="text-primary">Text: Primary</p>
+                <p className="text-secondary">Text: Secondary</p>
+                <p className="text-tertiary">Text: Tertiary</p>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="color two">
+              custom-surf/card
+              <div className="text colors">
+                <p className="text-primary">Text: Primary</p>
+                <p className="text-secondary">Text: Secondary</p>
+                <p className="text-tertiary">Text: Tertiary</p>
+              </div>
+            </div>
+            <div className="color secondary">
+              color Secondary
+              <div className="text colors">
+                <p className="text-primary">Text: Primary</p>
+                <p className="text-secondary">Text: Secondary</p>
+                <p className="text-tertiary">Text: Tertiary</p>
+              </div>
+            </div>
+            <div className="color secondary-dark">
+              color Secondary Dark
+              <div className="text colors">
+                <p className="text-primary">Text: Primary</p>
+                <p className="text-secondary">Text: Secondary</p>
+                <p className="text-tertiary">Text: Tertiary</p>
+              </div>
+            </div>
+          </div>
+          <div className="color navbar-test">
+            navbar test
+            <div className="nav-wrapper">
+              <div className="color nav-active">NAV AcTiVe</div>
+              <div className="color nav-inactive">NAV InACTIVE</div>
+            </div>
+          </div>
         </div>
       </header>
       <BottomNavBar />
